@@ -1,12 +1,11 @@
-# PROJECT NAME TO GO HERE
+# Manifestation Magic
 
-👩🏻‍💻 View an example of this section [here](https://github.com/kera-cudmore/Bully-Book-Club#bully-book-club-website)
+The purpose of the web application is to provide users with a dedicated platform to help them manifest their goals, wishes, and dreams. This application aims to address the common challenge of staying motivated and focused on personal aspirations by offering a supportive and structured environment for daily engagement. By allowing users to create, recharge, and track their manifestations, the app encourages consistency, accountability, and positive reinforcement, ultimately helping users achieve their full potential and turn their dreams into reality.
 
-Add a Blurb about the site here, what does it do, why did you build it?
 
 Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
 
-Add a link to the live site here
+View the live site here 
 
 
 
