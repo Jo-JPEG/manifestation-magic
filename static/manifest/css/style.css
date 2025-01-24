@@ -1,10 +1,30 @@
+/* css variables  */
+
+:root {
+    --primary-font: sans-serif;
+    --secondary-font: serif;
+    --brand-font:  serif;
+    --text-color-dark: #313435;
+    --text-color-light: #FCF4EE;
+    --background-color: #FCF4EE;
+    --navbar-color: #313435;
+    --navbar-pop-color: #494B4C;
+    --box-color: #A9B18F; 
+    --sage: #A9B18F;
+    --rosy-brown: #C89FA3;
+    --seashell: #FCF4EE;
+    --onyx: #313435;
+    --outer-space: #494B4C;
+
+}
+
 body {
-    background-color: #FCF4EE;
-    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    font-family: var(--primary-font);
 }
 
 h1 {
-    color: #313435;
+    color: var(--text-color-dark);
     text-align: center;
 }
 
@@ -34,6 +54,6 @@ a:hover {
 .description_container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
 
 }

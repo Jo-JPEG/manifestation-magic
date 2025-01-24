@@ -53,7 +53,43 @@ View the live site here
 
 ### User Stories
 
-Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
+As a new user, I want to register with the site so that I can access all the features.
+
+As a returning user, I want to log in with my username and password, so that I can use the site features.
+
+As a user who uses various devices, I want to securely log out of my account so that my information is kept private and secure.
+
+As a user, I want to delete my account, so that I can stop using the site or create a new account with different information.
+
+As a user, I want to update my user account email and password so that I can keep my account secure.
+
+As a new user, I want to see information about manifesting so that I can create my own manifestation.
+
+As a new user, I want to create a new manifestation so that I can set my goals and wishes.
+
+As a returning user, I want to view a list of my manifestations so that I can track my progress.
+
+As a returning user, I want to edit my manifestations so that I can update my goals and wishes as they evolve.
+
+As a regular user, I want to delete manifestations so that I can remove goals or wishes that are no longer relevant.
+
+As a frequent user, I want to recharge my manifestations daily so that I can stay motivated and focused on my goals.
+
+As a user, I want to set privacy settings for my manifestations so that I can control who can view them.
+
+As a user, I want to share my manifestations with friends so that I can get support and encouragement.
+
+As a user, I want to receive inspirational quotes and tips so that I can stay motivated on my journey.
+
+As a user, I want to categorize my manifestations (e.g., personal, professional) so that I can organize my goals effectively.
+
+As a community-minded user, I want to see other users' public manifestations so that I can find inspiration and learn from others.
+As a frequent user, I want to see notifications for major milestones so that I can celebrate my achievements.
+
+As an infrequent user, I want to receive email reminders to recharge my manifestations so that I can remember to engage with the site.
+
+As a user, I want to view my recharge history so that I can see how frequently I have engaged with my goals.
+
 
 ## Design
 

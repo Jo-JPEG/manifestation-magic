@@ -21,7 +21,7 @@ class Manifestation(models.Model):
     ]
 
     owner = models.ForeignKey(CustomUser, on_delete=models.CASCADE, null=True, blank=True)
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=100) 
     description = models.TextField(max_length=500)
     style_choice = models.CharField(max_length=10, choices=STYLE_CHOICES)
     slug = models.SlugField(unique=True, blank=True, null=True)
