@@ -20,7 +20,7 @@ class Manifestation(models.Model):
         ('pastel', 'Pastel'),
     ]
 
-    # owner = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+    owner = models.ForeignKey(CustomUser, on_delete=models.CASCADE, null=True, blank=True)
     title = models.CharField(max_length=100)
     description = models.TextField(max_length=500)
     style_choice = models.CharField(max_length=10, choices=STYLE_CHOICES)
