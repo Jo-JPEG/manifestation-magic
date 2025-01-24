@@ -24,7 +24,11 @@
         </form>
     {% else %}
         <p>Cannot charge at this time</p>
-        <p>You can recharge your manifestation again at {{ manifestation.next_charge_time }}</p>
+        {% if manifestation.next_charge_time %}
+            <p>You can recharge your manifestation again at {{ manifestation.next_charge_time }}</p>
+        {% else %}
+            <p>Next charge time is not available</p>
+        {% endif %}
     {% endif %}
     
 </div>

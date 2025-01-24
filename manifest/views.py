@@ -30,6 +30,9 @@ def view_manifestation(request, id):
     if manifestation.is_charged and timezone.now() > manifestation.last_charged + timedelta(minutes=2):
         manifestation.is_charged = False
         manifestation.save()
+    if manifestation.last_charged and timezone.now() > manifestation.last_charged + timedelta(minutes=1):
+        manifestation.can_charge = True
+        manifestation.save()
     context = {
         'manifestation': manifestation,
         'next_charge_time': manifestation.next_charge_time()
@@ -41,6 +44,7 @@ def charge_manifestation(request, id):
     manifestation = get_object_or_404(Manifestation, id=id)
     if request.method == 'POST':
         manifestation.is_charged = True
+        manifestation.can_charge = False
         manifestation.last_charged = timezone.now()
         manifestation.save()
         return redirect('view_manifestation', id=id)
