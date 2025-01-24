@@ -53,3 +53,11 @@ def edit_manifestation(request, id):
     else:
         form = ManifestationForm(instance=manifestation)
     return render(request, 'manifest/edit_manifestation.html', {'form': form, 'manifestation': manifestation})
+
+@login_required
+def delete_manifestation(request, id):
+    manifestation = get_object_or_404(Manifestation, id=id)
+    if request.method == 'POST':
+        manifestation.delete()
+        return redirect('home')
+    return render(request, 'manifest/delete_manifestation.html', {'manifestation': manifestation})

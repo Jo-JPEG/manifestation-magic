@@ -22,8 +22,10 @@
             <button type="submit">Charge</button>
         </form>
     {% endif %}
-    <a href="{% url 'edit_manifestation' manifestation.id %}">Edit Manifestation</a>
+    
 </div>
+<a href="{% url 'edit_manifestation' manifestation.id %}">Edit Manifestation</a>
+<a href="{% url 'delete_manifestation' manifestation.id %}">Delete Manifestation</a>
     
 <a href="{% url 'home' %}">Back to Home</a>
 {% endblock %}
