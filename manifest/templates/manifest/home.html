@@ -1,6 +1,29 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>Welcome to Manifestation Magic!</h1>
-  <p>Your journey to manifesting your dreams starts here.</p>
+
+{% if user.is_authenticated %}
+    <h1>Welcome, {{ user.display_name }}!</h1>
+
+    <p>Your manifestations:</p>
+    <ul>
+        {% for manifestation in manifestations %}
+            <li>
+                <a href="{% url 'view_manifestation' manifestation.id %}">{{ manifestation.title }}</a>
+            </li>
+        {% empty %}
+            <li>You don't have any current manifestations.</li>  <!-- Debug statement -->
+        {% endfor %}
+    </ul>
+
+{% else %}
+    <h1>Welcome to Manifestation Magic!</h1>
+    <p>Your journey to manifesting your dreams starts here.</p>
+    <p>Sign up to get started!</p>
+    <a href="{% url 'signup' %}">Sign Up</a>
+    <p>Already have an account? Log in below!</p>
+    <a href="{% url 'login' %}">Login</a>
+
+{% endif %}
+
 {% endblock %}

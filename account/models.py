@@ -1,6 +1,7 @@
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from django.conf import settings
 
 class CustomUserManager(BaseUserManager):
     def create_user(self, username, email, display_name, password=None, **extra_fields):
@@ -32,6 +33,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     date_joined = models.DateTimeField(auto_now_add=True)
+    manifestations = models.ManyToManyField('manifest.Manifestation', related_name='users')
 
     objects = CustomUserManager()
 
