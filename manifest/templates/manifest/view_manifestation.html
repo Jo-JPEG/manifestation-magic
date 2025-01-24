@@ -10,17 +10,21 @@
     </div>
     
     <p>Created on: {{ manifestation.created_on }}</p>
-    <p>Last Charged: {{ manifestation.last_charged}} </p>
+    <p>Last Charged: {{ manifestation.last_charged }} </p>
     {% if manifestation.is_charged %}
         <p>Charged: Yes</p>
-        <p>You can recharge your manifestation every day.</p>
     {% else %}
         <p>Charged: No</p>
-        <p>click to charge!</p>
+    {% endif %}
+    {% if manifestation.can_charge %}
+        <p>Click to charge!</p>
         <form action="{% url 'charge_manifestation' manifestation.id %}" method="POST">
             {% csrf_token %}
             <button type="submit">Charge</button>
         </form>
+    {% else %}
+        <p>Cannot charge at this time</p>
+        <p>You can recharge your manifestation again at {{ manifestation.next_charge_time }}</p>
     {% endif %}
     
 </div>

@@ -27,10 +27,14 @@ def create_manifestation(request):
 @login_required
 def view_manifestation(request, id):
     manifestation = Manifestation.objects.get(id=id)
-    if manifestation.is_charged and timezone.now() > manifestation.last_charged + timedelta(minutes=1):
+    if manifestation.is_charged and timezone.now() > manifestation.last_charged + timedelta(minutes=2):
         manifestation.is_charged = False
         manifestation.save()
-    return render(request, 'manifest/view_manifestation.html', {'manifestation': manifestation})
+    context = {
+        'manifestation': manifestation,
+        'next_charge_time': manifestation.next_charge_time()
+    }
+    return render(request, 'manifest/view_manifestation.html', context)
 
 @login_required
 def charge_manifestation(request, id):
