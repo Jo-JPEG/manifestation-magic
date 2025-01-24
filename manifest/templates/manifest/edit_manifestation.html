@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Edit Manifestation</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save changes</button>
+</form>
+<a href="{% url 'view_manifestation' manifestation.id %}">Cancel</a>
+{% endblock %}

@@ -23,10 +23,17 @@ a:hover {
     text-decoration: underline;
 }
 
-.container {
+.manifestation_container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
     background-color: #A9B18F;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.description_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }

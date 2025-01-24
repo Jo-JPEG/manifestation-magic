@@ -1,8 +1,29 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+<div class="manifestation_container">
     <h1>{{ manifestation.title }}</h1>
-    <p>{{ manifestation.description }}</p>
-    <p>Created on: {{ manifestation.created_at }}</p>
-    <a href="{% url 'home' %}">Back to Home</a>
+
+    <div class="description_container">
+        <p>{{ manifestation.description }}</p>
+    </div>
+    
+    <p>Created on: {{ manifestation.created_on }}</p>
+    <p>Last Charged: {{ manifestation.last_charged}} </p>
+    {% if manifestation.is_charged %}
+        <p>Charged: Yes</p>
+        <p>You can recharge your manifestation every day.</p>
+    {% else %}
+        <p>Charged: No</p>
+        <p>click to charge!</p>
+        <form action="{% url 'charge_manifestation' manifestation.id %}" method="POST">
+            {% csrf_token %}
+            <button type="submit">Charge</button>
+        </form>
+    {% endif %}
+    <a href="{% url 'edit_manifestation' manifestation.id %}">Edit Manifestation</a>
+</div>
+    
+<a href="{% url 'home' %}">Back to Home</a>
 {% endblock %}
