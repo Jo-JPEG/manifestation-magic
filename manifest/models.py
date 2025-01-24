@@ -11,12 +11,15 @@ class Manifestation(models.Model):
         ('sun', 'Sun'),
         ('stars', 'Stars'),
         ('cosmic', 'Cosmic'),
-        ('other', 'Other'),
+        ('witchy', 'Witchy'),
+        ('hearts', 'Hearts'),
+        ('antique', 'Antique'),
+        ('pastel', 'Pastel'),
     ]
 
     owner = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
-    description = models.TextField()
+    description = models.TextField(max_length=500)
     style_choice = models.CharField(max_length=10, choices=STYLE_CHOICES)
     slug = models.SlugField(unique=True, blank=True, null=True)
     created_on = models.DateTimeField(auto_now_add=True)
