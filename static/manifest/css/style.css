@@ -23,6 +23,37 @@ body {
     font-family: var(--primary-font);
 }
 
+nav {
+    background-color: var(--navbar-color);
+    color: var(--text-color-light);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    justify-content: flex-start;
+}
+
+nav a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: var(--navbar-pop-color);
+}
+
+main {
+    margin: 20px;
+    min-height: 70vh;
+}
+
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color-dark);
+    padding: 10px;
+    text-align: center;
+}
+
 h1 {
     color: var(--text-color-dark);
     text-align: center;
@@ -56,4 +87,50 @@ a:hover {
     justify-content: space-between;
     align-items: center; 
 
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--seashell);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+label {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+form li {
+    list-style-type: none;
+    font-size: 0.6rem;
+    color: var(--onyx);
+}
+
+.helptext {
+    font-size: small;
+    color: var(--onyx);
 }
