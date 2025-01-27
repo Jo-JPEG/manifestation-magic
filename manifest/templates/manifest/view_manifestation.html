@@ -17,11 +17,15 @@
         <p>Charged: No</p>
     {% endif %}
     {% if manifestation.can_charge %}
-        <p>Click to charge!</p>
-        <form action="{% url 'charge_manifestation' manifestation.id %}" method="POST">
-            {% csrf_token %}
-            <button type="submit">Charge</button>
-        </form>
+        {% if user == manifestation.owner %}
+            <p>Click to charge!</p>
+            <form action="{% url 'charge_manifestation' manifestation.id %}" method="POST">
+                {% csrf_token %}
+                <button type="submit">Charge</button>
+            </form>
+        {% else %}
+            <p>Only the owner can charge this manifestation.</p>
+        {% endif %}
     {% else %}
         <p>Cannot charge at this time</p>
         {% if manifestation.next_charge_time %}
@@ -31,9 +35,11 @@
         {% endif %}
     {% endif %}
     
-</div>
-<a href="{% url 'edit_manifestation' manifestation.id %}">Edit Manifestation</a>
-<a href="{% url 'delete_manifestation' manifestation.id %}">Delete Manifestation</a>
+    {% if user == manifestation.owner %}
+        <a href="{% url 'edit_manifestation' manifestation.id %}">Edit Manifestation</a>
+        <a href="{% url 'delete_manifestation' manifestation.id %}">Delete Manifestation</a>
+    {% endif %}
     
-<a href="{% url 'home' %}">Back to Home</a>
+    <a href="{% url 'home' %}">Back to Home</a>
+</div>
 {% endblock %}
