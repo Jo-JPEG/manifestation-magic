@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('manifest.urls')),
     path('account/', include('account.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),  # Add this line for built-in auth views
 ]
