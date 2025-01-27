@@ -5,6 +5,7 @@ from . import views
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('about/', views.about, name='about'),
     path('create/', views.create_manifestation, name='create_manifestation'),
     path('manifestation/<int:manifestation_id>/', views.view_manifestation, name='view_manifestation'),
     path('manifestation/edit/<int:id>/', views.edit_manifestation, name='edit_manifestation'),

@@ -11,6 +11,9 @@ def home(request):
     manifestations = Manifestation.objects.filter(owner=request.user)
     return render(request, 'manifest/home.html', {'manifestations': manifestations})
 
+def about(request):
+    return render(request, 'about.html')
+
 @login_required
 def create_manifestation(request):
     if request.method == 'POST':
