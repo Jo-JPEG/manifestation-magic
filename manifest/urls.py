@@ -11,6 +11,7 @@ urlpatterns = [
     path('manifestation/edit/<int:id>/', views.edit_manifestation, name='edit_manifestation'),
     path('manifestation/charge/<int:id>/', views.charge_manifestation, name='charge_manifestation'),
     path('manifestation/<int:id>/delete/', views.delete_manifestation, name='delete_manifestation'),
+    path('public-manifestations/', views.public_manifestations, name='public_manifestations'),
     # ...existing code...
 ]
 

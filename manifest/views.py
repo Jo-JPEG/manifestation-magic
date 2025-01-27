@@ -75,3 +75,7 @@ def delete_manifestation(request, id):
     if request.method == 'POST':
         manifestation.delete()
     return redirect('home')
+
+def public_manifestations(request):
+    manifestations = Manifestation.objects.filter(is_public=True, is_approved=True)
+    return render(request, 'manifest/public_manifestations.html', {'manifestations': manifestations})
