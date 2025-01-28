@@ -20,5 +20,3 @@ class UserAdmin(BaseUserAdmin):
     readonly_fields = ('date_joined',)  # Add this line to make date_joined read-only
 
 admin.site.register(CustomUser, UserAdmin)
-
-
