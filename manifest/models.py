@@ -5,6 +5,7 @@ from account.models import CustomUser
 from datetime import timedelta
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
+import itertools
 
 class Manifestation(models.Model):
     STYLE_CHOICES = [
@@ -24,7 +25,7 @@ class Manifestation(models.Model):
     title = models.CharField(max_length=100) 
     description = models.TextField(max_length=500)
     style_choice = models.CharField(max_length=10, choices=STYLE_CHOICES)
-    slug = models.SlugField(unique=True, blank=True, null=True)
+    slug = models.SlugField(unique=True, max_length=255, blank=True, null=True)
     created_on = models.DateTimeField(auto_now_add=True)
     last_charged = models.DateTimeField(null=True, blank=True)
     is_charged = models.BooleanField(default=False)
@@ -45,6 +46,13 @@ class Manifestation(models.Model):
                 self.can_charge = False
         else:
             self.can_charge = True
+        if not self.slug:
+            self.slug = slugify(self.title)
+            original_slug = self.slug
+            for i in itertools.count(1):
+                if not Manifestation.objects.filter(slug=self.slug).exists():
+                    break
+                self.slug = f'{original_slug}-{i}'
         super().save(*args, **kwargs)
 
     def next_charge_time(self):

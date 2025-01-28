@@ -19,7 +19,7 @@
     {% endif %}
     {% if manifestation.can_charge %}
         {% if user == manifestation.owner %}
-            <form action="{% url 'charge_manifestation' manifestation.id %}" method="POST">
+            <form action="{% url 'charge_manifestation' manifestation.slug %}" method="POST">
                 {% csrf_token %}
                 <button type="submit">Charge!</button>
             </form>
@@ -36,8 +36,8 @@
     {% endif %}
     
     {% if user == manifestation.owner %}
-        <a href="{% url 'edit_manifestation' manifestation.id %}">Edit Manifestation</a>
-        <a href="{% url 'delete_manifestation' manifestation.id %}">Delete Manifestation</a>
+        <a href="{% url 'edit_manifestation' manifestation.slug %}">Edit Manifestation</a>
+        <a href="{% url 'delete_manifestation' manifestation.slug %}">Delete Manifestation</a>
     {% endif %}
     
     <a href="{% url 'home' %}">Back to Home</a>

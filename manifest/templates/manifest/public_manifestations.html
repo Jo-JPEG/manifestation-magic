@@ -7,7 +7,7 @@
 <ul>
     {% for manifestation in manifestations %}
         <li>
-            <a href="{% url 'view_manifestation' manifestation.id %}">{{ manifestation.title }}</a>
+            <a href="{% url 'view_manifestation' manifestation.slug %}">{{ manifestation.title }}</a>
             <p>by {{ manifestation.owner }}</p>
         </li>
     {% empty %}
