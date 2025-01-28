@@ -78,8 +78,26 @@ a:hover {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #A9B18F;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.manifestation_container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.manifestation_container button {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--rosy-brown);
+    color: var(--text-color-dark);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .description_container {
@@ -133,4 +151,56 @@ form li {
 .helptext {
     font-size: small;
     color: var(--onyx);
+}
+
+/* style choices  */
+
+.moon {
+    background-color: yellow;
+    color: black;
+}
+
+.neutral {
+    background-color: var(--box-color);
+    color: var(--text-color-dark);
+}
+
+.nature {
+    background-color: green;
+    color: white;
+}
+
+.sun {
+    background-color: red;
+    color: white;
+}
+
+.stars {
+    background-color: blue;
+    color: white;
+}
+
+.cosmic {
+    background-color: purple;
+    color: white;
+}
+
+.witchy {
+    background-color: black;
+    color: white;
+}
+
+.hearts {
+    background-color: pink;
+    color: white;
+}
+
+.antique {
+    background-color: var(--rosy-brown);
+    color: var(--text-color-dark);
+}
+
+.pastel {
+    background-color: var(--sage);
+    color: var(--text-color-dark);
 }

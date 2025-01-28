@@ -2,8 +2,9 @@
 
 {% block content %}
 
-<div class="manifestation_container">
+<div class="manifestation_container {{ manifestation.style_choice }}">
     <h1>{{ manifestation.title }}</h1>
+    <p>{{ manifestation.style_choice }}</p>
 
     <div class="description_container">
         <p>{{ manifestation.description }}</p>
@@ -18,10 +19,9 @@
     {% endif %}
     {% if manifestation.can_charge %}
         {% if user == manifestation.owner %}
-            <p>Click to charge!</p>
             <form action="{% url 'charge_manifestation' manifestation.id %}" method="POST">
                 {% csrf_token %}
-                <button type="submit">Charge</button>
+                <button type="submit">Charge!</button>
             </form>
         {% else %}
             <p>Only the owner can charge this manifestation.</p>
