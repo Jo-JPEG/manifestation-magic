@@ -12,7 +12,6 @@ urlpatterns = [
     path('manifestation/delete/<slug:slug>/', views.delete_manifestation, name='delete_manifestation'),
     path('public-manifestations/', views.public_manifestations, name='public_manifestations'),
     path('manifestation/charge/<slug:slug>/', views.charge_manifestation, name='charge_manifestation'),
-    # ...existing code...
 ]
 
 if settings.DEBUG:
