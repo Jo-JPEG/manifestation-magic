@@ -27,7 +27,7 @@ def create_manifestation(request):
         form = ManifestationForm()
     return render(request, 'manifest/create_manifestation.html', {'form': form})
 
-@login_required
+# @login_required
 def view_manifestation(request, slug):
     manifestation = get_object_or_404(Manifestation, slug=slug)
     
