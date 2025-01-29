@@ -1,11 +1,13 @@
 # Manifestation Magic
 
-The purpose of the web application is to provide users with a dedicated platform to help them manifest their goals, wishes, and dreams. This application aims to address the common challenge of staying motivated and focused on personal aspirations by offering a supportive and structured environment for daily engagement. By allowing users to create, recharge, and track their manifestations, the app encourages consistency, accountability, and positive reinforcement, ultimately helping users achieve their full potential and turn their dreams into reality.
+## Overview
+
+The purpose of Manifestation Magic is to provide users with a dedicated platform to help them manifest their goals, wishes, and dreams. This application aims to address the common challenge of staying motivated and focused on personal aspirations by offering a supportive and structured environment for daily engagement. By allowing users to create, recharge, and track their manifestations, the app encourages consistency, accountability, and positive reinforcement, ultimately helping users achieve their full potential and turn their dreams into reality.
 
 
 Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
 
-View the live site here 
+View the live site here [Manifestation Magic](https://manifestation-magic-d55b183502af.herokuapp.com/)
 
 
 
@@ -31,6 +33,8 @@ View the live site here
   * [Languages Used](#languages-used)
   * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
+* [AI Implementation and Orchestration](#ai-implementation-and-orchestration)
+
 * [Deployment & Local Development](#deployment--local-development)
   * [Deployment](#deployment)
   * [Local Development](#local-development)
@@ -49,51 +53,54 @@ View the live site here
 
 ## User Experience (UX)
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
+
+- **Wireframes:**
+  - [Attach or link to accessible wireframes used in the design process, ensuring high colour contrast and alt text for visual elements.]
+  - [Explain the rationale behind the layout and design choices, focusing on usability and accessibility for all users, including those using assistive technologies.]
+- **Design Rationale:**
+  - [Explain key design decisions, such as layout, colour scheme, typography, and how accessibility guidelines (e.g., WCAG) were integrated.]
+  - [Highlight any considerations made for users with disabilities, such as screen reader support.]
+- **Reasoning For Any Final Changes:**
+  - [Summarise significant changes made to the design during development and the reasons behind them.]
+  - [Reflect on how these changes enhance inclusivity and accessibility.]
 
 ### User Stories
 
-As a new user, I want to register with the site so that I can access all the features.
+**Link to User Stories in GitHub Projects:**
+ [GitHub Project board](https://github.com/users/Jo-JPEG/projects/11)
 
-As a returning user, I want to log in with my username and password, so that I can use the site features.
+#### Must-have User Stories:
+-As a new user, I want to register with the site so that I can access all the features.
+-As a returning user, I want to log in with my username and password, so that I can use the site features.
+-As a user who uses various devices, I want to securely log out of my account so that my information is kept private and secure.
+-As a user, I want to delete my account, so that I can stop using the site or create a new account with different information.
+-As a user, I want to update my user account email and password so that I can keep my account secure.
+-As a new user, I want to see information about manifesting so that I can create my own manifestation.
+-As a new user, I want to create a new manifestation so that I can set my goals and wishes.
+-As a returning user, I want to view a list of my manifestations so that I can track my progress.
+-As a returning user, I want to edit my manifestations so that I can update my goals and wishes as they evolve.
+-As a regular user, I want to delete manifestations so that I can remove goals or wishes that are no longer relevant.
+-As a frequent user, I want to recharge my manifestations daily so that I can stay motivated and focused on my goals.
+-As a user, I want to set privacy settings for my manifestations so that I can control who can view them.
 
-As a user who uses various devices, I want to securely log out of my account so that my information is kept private and secure.
+#### Should-have User stories:
+ 
+-As a user, I want to share my manifestations with friends so that I can get support and encouragement.
+-As a community-minded user, I want to see other users' public manifestations so that I can find inspiration and learn from others.
 
-As a user, I want to delete my account, so that I can stop using the site or create a new account with different information.
-
-As a user, I want to update my user account email and password so that I can keep my account secure.
-
-As a new user, I want to see information about manifesting so that I can create my own manifestation.
-
-As a new user, I want to create a new manifestation so that I can set my goals and wishes.
-
-As a returning user, I want to view a list of my manifestations so that I can track my progress.
-
-As a returning user, I want to edit my manifestations so that I can update my goals and wishes as they evolve.
-
-As a regular user, I want to delete manifestations so that I can remove goals or wishes that are no longer relevant.
-
-As a frequent user, I want to recharge my manifestations daily so that I can stay motivated and focused on my goals.
-
-As a user, I want to set privacy settings for my manifestations so that I can control who can view them.
-
-As a user, I want to share my manifestations with friends so that I can get support and encouragement.
-
-As a user, I want to receive inspirational quotes and tips so that I can stay motivated on my journey.
-
-As a user, I want to categorize my manifestations (e.g., personal, professional) so that I can organize my goals effectively.
-
-As a community-minded user, I want to see other users' public manifestations so that I can find inspiration and learn from others.
-As a frequent user, I want to see notifications for major milestones so that I can celebrate my achievements.
-
-As an infrequent user, I want to receive email reminders to recharge my manifestations so that I can remember to engage with the site.
-
-As a user, I want to view my recharge history so that I can see how frequently I have engaged with my goals.
+#### Could-have User stories
+-As a user, I want to receive inspirational quotes and tips so that I can stay motivated on my journey.
+-As a user, I want to categorize my manifestations (e.g., personal, professional) so that I can organize my goals effectively.
+-As a frequent user, I want to see notifications for major milestones so that I can celebrate my achievements.
+-As an infrequent user, I want to receive email reminders to recharge my manifestations so that I can remember to engage with the site.
+-As a user, I want to view my recharge history so that I can see how frequently I have engaged with my goals.
 
 
 ## Design
 
-👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
+- **Design Rationale:**
+  - [Explain key design decisions, such as layout, colour scheme, typography, and how accessibility guidelines (e.g., WCAG) were integrated.]
+  - [Highlight any considerations made for users with disabilities, such as screen reader support.]
 
 ### Colour Scheme
 
@@ -125,9 +132,7 @@ There are lots of different options to create your wireframes - Code Institute s
 
 ## Features
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
 
-This section can be used to explain what pages your site is made up of.
 
 ### General features on each page
 
@@ -157,23 +162,56 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 ### Languages Used
 
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+-HTML
+-CSS
+-Python
+-Django
+
 
 ### Frameworks, Libraries & Programs Used
 
 Add any frameworks, libraries or programs used while creating your project.
 
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
+-Microsoft Copilot was used (See AI Implementation and Orchestration)
+-Balsamic for initial wireframe creation
+-FireAlpaca for creating custom images 
 
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
+## AI Implementation and Orchestration
+
+### Use Cases and Reflections:
+(Highlight how prompts, such as reverse, question-and-answer or multi-step, were used to support learners with SEND or ALN where relevant.)
+
+  - **Code Creation:** 
+    - Reflection: Strategic use of AI allowed for rapid prototyping, with minor adjustments for alignment with project goals. 
+    - Examples: Reverse prompts for alternative code solutions and question-answer prompts for resolving specific challenges.
+  - **Debugging:** 
+    - Reflection: Key interventions included resolving logic errors and enhancing maintainability, with a focus on simplifying complex logic to make it accessible.
+  - **Performance and UX Optimization:** 
+    - Reflection: Minimal manual adjustments were needed to apply AI-driven improvements, which enhanced application speed and user experience for all users.
+  - **Automated Unit Testing:**
+    - Reflection: Adjustments were made to improve test coverage and ensure alignment with functionality. Prompts were used to generate inclusive test cases that considered edge cases for accessibility.
+
+- **Overall Impact:**
+  - AI tools streamlined repetitive tasks, enabling focus on high-level development.
+  - Efficiency gains included faster debugging, comprehensive testing, and improved code quality.
+  - Challenges included contextual adjustments to AI-generated outputs, which were resolved effectively, enhancing inclusivity.
+
 
 ## Deployment & Local Development
 
-👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
-
 ### Deployment
 
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+- **Platform:** [Platform used, e.g., Heroku, AWS, etc.]
+- **High-Level Deployment Steps:** 
+  1. [Step 1]
+  2. [Step 2]
+  3. [Step 3]
+- **Verification and Validation:**
+  - Steps taken to verify the deployed version matches the development version in functionality.
+  - [Include any additional checks to ensure accessibility of the deployed application.]
+- **Security Measures:**
+  - Use of environment variables for sensitive data.
+  - Ensured DEBUG mode is disabled in production.
 
 ### Local Development
 
@@ -189,10 +227,15 @@ Place instructions on how to clone your project here.
 
 ## Testing
 
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
+- **Manual Testing:**
+  - **Devices and Browsers Tested:** [List devices and browsers, ensuring testing was conducted with assistive technologies such as screen readers or keyboard-only navigation.]
+  - **Features Tested:** [Summarise features tested manually, e.g., CRUD operations, navigation.]
+  - **Results:** [Summarise testing results, e.g., "All critical features worked as expected, including accessibility checks."]
+- **Automated Testing:**
+  - Tools Used: [Mention any testing frameworks or tools, e.g., Django TestCase.]
+  - Features Covered: [Briefly list features covered by automated tests.]
+  - Adjustments Made: [Describe any manual corrections to AI-generated test cases, particularly for accessibility.]
 
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  
 Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
 
 ## Credits
