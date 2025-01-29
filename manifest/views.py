@@ -27,12 +27,11 @@ def create_manifestation(request):
         form = ManifestationForm()
     return render(request, 'manifest/create_manifestation.html', {'form': form})
 
-# @login_required
 def view_manifestation(request, slug):
     manifestation = get_object_or_404(Manifestation, slug=slug)
     
     if manifestation.owner != request.user and not (manifestation.is_public and manifestation.is_approved):
-        return HttpResponseForbidden()
+        return render(request, 'manifest/forbidden.html')
     
     return render(request, 'manifest/view_manifestation.html', {'manifestation': manifestation})
 
