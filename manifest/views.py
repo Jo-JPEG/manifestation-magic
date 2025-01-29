@@ -64,7 +64,8 @@ def delete_manifestation(request, slug):
     manifestation = get_object_or_404(Manifestation, slug=slug)
     if request.method == 'POST':
         manifestation.delete()
-    return redirect('home')
+        return redirect('home')  # Redirect to a different view after deletion
+    return render(request, 'manifest/delete_manifestation.html', {'manifestation': manifestation})
 
 def public_manifestations(request):
     manifestations = Manifestation.objects.filter(is_public=True, is_approved=True)
