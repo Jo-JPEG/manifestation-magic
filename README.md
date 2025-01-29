@@ -70,30 +70,30 @@ View the live site here [Manifestation Magic](https://manifestation-magic-d55b18
  [GitHub Project board](https://github.com/users/Jo-JPEG/projects/11)
 
 #### Must-have User Stories:
--As a new user, I want to register with the site so that I can access all the features.
--As a returning user, I want to log in with my username and password, so that I can use the site features.
--As a user who uses various devices, I want to securely log out of my account so that my information is kept private and secure.
--As a user, I want to delete my account, so that I can stop using the site or create a new account with different information.
--As a user, I want to update my user account email and password so that I can keep my account secure.
--As a new user, I want to see information about manifesting so that I can create my own manifestation.
--As a new user, I want to create a new manifestation so that I can set my goals and wishes.
--As a returning user, I want to view a list of my manifestations so that I can track my progress.
--As a returning user, I want to edit my manifestations so that I can update my goals and wishes as they evolve.
--As a regular user, I want to delete manifestations so that I can remove goals or wishes that are no longer relevant.
--As a frequent user, I want to recharge my manifestations daily so that I can stay motivated and focused on my goals.
--As a user, I want to set privacy settings for my manifestations so that I can control who can view them.
+- As a new user, I want to register with the site so that I can access all the features.
+- As a returning user, I want to log in with my username and password, so that I can use the site features.
+- As a user who uses various devices, I want to securely log out of my account so that my information is kept private and secure.
+- As a user, I want to delete my account, so that I can stop using the site or create a new account with different information.
+- As a user, I want to update my user account email and password so that I can keep my account secure.
+- As a new user, I want to see information about manifesting so that I can create my own manifestation.
+- As a new user, I want to create a new manifestation so that I can set my goals and wishes.
+- As a returning user, I want to view a list of my manifestations so that I can track my progress.
+- As a returning user, I want to edit my manifestations so that I can update my goals and wishes as they evolve.
+- As a regular user, I want to delete manifestations so that I can remove goals or wishes that are no longer relevant.
+- As a frequent user, I want to recharge my manifestations daily so that I can stay motivated and focused on my goals.
+- As a user, I want to set privacy settings for my manifestations so that I can control who can view them.
 
 #### Should-have User stories:
  
--As a user, I want to share my manifestations with friends so that I can get support and encouragement.
--As a community-minded user, I want to see other users' public manifestations so that I can find inspiration and learn from others.
+- As a user, I want to share my manifestations with friends so that I can get support and encouragement.
+- As a community-minded user, I want to see other users' public manifestations so that I can find inspiration and learn from others.
 
 #### Could-have User stories
--As a user, I want to receive inspirational quotes and tips so that I can stay motivated on my journey.
--As a user, I want to categorize my manifestations (e.g., personal, professional) so that I can organize my goals effectively.
--As a frequent user, I want to see notifications for major milestones so that I can celebrate my achievements.
--As an infrequent user, I want to receive email reminders to recharge my manifestations so that I can remember to engage with the site.
--As a user, I want to view my recharge history so that I can see how frequently I have engaged with my goals.
+- As a user, I want to receive inspirational quotes and tips so that I can stay motivated on my journey.
+- As a user, I want to categorize my manifestations (e.g., personal, professional) so that I can organize my goals effectively.
+- As a frequent user, I want to see notifications for major milestones so that I can celebrate my achievements.
+- As an infrequent user, I want to receive email reminders to recharge my manifestations so that I can remember to engage with the site.
+- As a user, I want to view my recharge history so that I can see how frequently I have engaged with my goals.
 
 
 ## Design
@@ -162,19 +162,19 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 ### Languages Used
 
--HTML
--CSS
--Python
--Django
+- HTML
+- CSS
+- Python
+- Django
 
 
 ### Frameworks, Libraries & Programs Used
 
 Add any frameworks, libraries or programs used while creating your project.
 
--Microsoft Copilot was used (See AI Implementation and Orchestration)
--Balsamic for initial wireframe creation
--FireAlpaca for creating custom images 
+- Microsoft Copilot was used (See AI Implementation and Orchestration)
+- Balsamic for initial wireframe creation
+- FireAlpaca for creating custom images 
 
 ## AI Implementation and Orchestration
 
@@ -249,7 +249,7 @@ The Credits section is where you can credit all the people and sources you used 
 If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
 
 ### Content
-
+ 
 Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
 
 ###  Media
