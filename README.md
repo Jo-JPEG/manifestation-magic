@@ -132,13 +132,40 @@ There are lots of different options to create your wireframes - Code Institute s
 
 ## Features
 
+### Main features
 
+#### Create Manifestation 
+
+Users complete a form to create their own manifestation. This includes a title, description, style choice and if they wish to make the manifestation public. 
+
+#### View Manifestation 
+
+Each manifestation has a unique URL slug allowing users to view their manifestation. They also have a choice of styles which vary the manifestation's aethetics. 
+
+#### Charge Manifestation
+
+Once a user has created their manifestation, they can recharge it by clicking on a button. Manifestations remain charged for 24 hours, however, users can recharge their manifestation again after 12 hours have passed. This improves the user experience, as users do not have to wait a full 24 hours until they can recharge. This means they do not have to charge at the same time every day but at a time that is convenient for them. 
+
+The idea behind recharging manifestations is that it encourages users to remember their manifestations and goals. The charge button is a statisfying way for users to remain focused on their goals and aspirations. 
+
+#### Share Manifestation 
+
+User can choose to make a manifestation public, allowing it to be viewable to others once it has receaved admin approval. This allows users to share thier important goals and wishes as well as take inspiration from other users. The requirement for admin approval ensures that inappropriate or harmful content is not shared publicly. 
+If a user edits their public manifestation at any time, it will automatically be resubmitted for admin approval. This ensures that any content that is publicly shared is appropriate for all. 
 
 ### General features on each page
 
-If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
+#### Navigation
 
-I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
+As a mobile-first design, Manifestation Magic provides a toggle icon for the navigation menu on screens less than 768 pixels wide. On mobile, the menu has a vertical layout.
+
+On wider screens, a horizontal navigation bar is always visible at the top of the site. 
+
+#### Footer
+
+#### 
+
+
 
 ### Future Implementations
 
@@ -245,6 +272,9 @@ Use this part of the README to link to your TESTING.md file - you can view the e
 The Credits section is where you can credit all the people and sources you used throughout your project.
 
 ### Code Used
+
+- Love Running
+- I think Therefore I Blog
 
 If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
 
