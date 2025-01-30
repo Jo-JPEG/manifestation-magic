@@ -52,6 +52,7 @@ def edit_manifestation(request, slug):
     if request.method == 'POST':
         form = ManifestationForm(request.POST, instance=manifestation)
         if form.is_valid():
+            manifestation.is_approved = False  # Set is_approved to False
             form.save()
             return redirect('view_manifestation', slug=manifestation.slug)
     else:
