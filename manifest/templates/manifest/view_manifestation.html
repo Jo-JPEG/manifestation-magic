@@ -7,14 +7,14 @@
     <p>{{ manifestation.style_choice }}</p>
 
     {% if manifestation.is_public %}
-    <p>This manifestation is public</p>
+    <p><i class="fa-solid fa-bullhorn" title="public"></i>
         {% if manifestation.is_approved %}
-        <p>approved!</p>
+        <i class="fa-regular fa-circle-check" title="approved"></i>
         {% else %}
-        <p>not yet approved. Manifestations must be approved by an administrator before other users can view it.</p>
+        <i class="fa-regular fa-circle" title="awaiting approval"></i></p>
         {% endif %}
     {% else %}
-    <p>not public</p>
+    <p><i class="fa-solid fa-lock" title="private"></i></p>
     {% endif %}
 
     <div class="description_container">
