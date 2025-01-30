@@ -6,6 +6,17 @@
     <h1>{{ manifestation.title }}</h1>
     <p>{{ manifestation.style_choice }}</p>
 
+    {% if manifestation.is_public %}
+    <p>This manifestation is public</p>
+        {% if manifestation.is_approved %}
+        <p>approved!</p>
+        {% else %}
+        <p>not yet approved. Manifestations must be approved by an administrator before other users can view it.</p>
+        {% endif %}
+    {% else %}
+    <p>not public</p>
+    {% endif %}
+
     <div class="description_container">
         <p>{{ manifestation.description }}</p>
     </div>
