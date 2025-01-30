@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Edit Manifestation</h2>
+<h2>Edit your manifestation</h2>
 <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
