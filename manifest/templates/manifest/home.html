@@ -10,7 +10,21 @@
     <ul>
         {% for manifestation in manifestations %}
             <li class="manifestation-list">
-                <a href="{% url 'view_manifestation' manifestation.slug %}">{{ manifestation.title }}</a>
+                <a href="{% url 'view_manifestation' manifestation.slug %}">
+                    {% if manifestation.is_charged %}
+                    <i class="fa-solid fa-star" title="Charged"></i>
+                    {% else %}
+                    <i class="fa-regular fa-star" title="Not Charged"></i>
+                    {% endif %}
+                     {{ manifestation.title }}</a>
+                <span class="home-info">
+                    {% if manifestation.is_public %}
+                    <i class="fa-solid fa-bullhorn" title="public"></i>
+                    {% else %}
+                    {% endif %}
+                </span>
+             
+               
             </li>
         {% empty %}
             <li>You don't have any current manifestations.</li>  <!-- Debug statement -->

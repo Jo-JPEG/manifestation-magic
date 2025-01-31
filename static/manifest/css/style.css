@@ -186,8 +186,8 @@ a:hover {
 .manifestation-list {
     padding: 5px;
     margin: 5px;
-    list-style-type: circle;
-    font-size: 1.5rem;
+    list-style-type: none;
+    font-size: 180%;
     color: var(--text-color-dark);
 
 }
@@ -200,6 +200,10 @@ a:hover {
 .manifestation-list a:hover {
     text-decoration: underline;
     background-color: var(--rosy-brown);
+}
+
+.home-info i {
+    font-size: 60%;
 }
 
 .center {

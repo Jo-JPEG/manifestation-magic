@@ -9,7 +9,19 @@ from django.http import HttpResponseForbidden
 @login_required
 def home(request):
     manifestations = Manifestation.objects.filter(owner=request.user)
-    return render(request, 'manifest/home.html', {'manifestations': manifestations})
+    for manifestation in manifestations:
+        if manifestation.is_charged and timezone.now() > manifestation.last_charged + timedelta(minutes=2):
+            manifestation.is_charged = False
+            manifestation.save()
+        if manifestation.last_charged and timezone.now() > manifestation.last_charged + timedelta(minutes=1):
+            manifestation.can_charge = True
+            manifestation.save()
+
+    context = {
+        'manifestations': manifestations,
+    }
+
+    return render(request, 'manifest/home.html', context)
 
 def about(request):
     return render(request, 'about.html')
