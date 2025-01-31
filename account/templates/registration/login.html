@@ -1,7 +1,14 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block title %}Login{% endblock %}
 
 {% block content %}
+  <p>welcome</p>
+  <img id="logo" src="{%static 'manifest/images/placeholder-logo.png'%}" alt="Manifestation Magic Logo">
+
   <h2>Login</h2>
+  
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}

@@ -93,6 +93,10 @@ main {
     min-height: 70vh;
 }
 
+#logo {
+    max-width: 200px;
+}
+
 footer {
     background-color: var(--background-color);
     color: var(--text-color-dark);
