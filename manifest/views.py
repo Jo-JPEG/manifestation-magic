@@ -73,3 +73,7 @@ def public_manifestations(request):
 
 def profile(request):
     return render(request, 'manifest/profile.html')
+
+def change_password(request):
+    # Your change password logic here
+    return render(request, 'manifest/change_password.html')
