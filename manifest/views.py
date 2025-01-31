@@ -33,6 +33,17 @@ def view_manifestation(request, slug):
     if manifestation.owner != request.user and not (manifestation.is_public and manifestation.is_approved):
         return render(request, 'manifest/forbidden.html')
     
+    if manifestation.is_charged and timezone.now() > manifestation.last_charged + timedelta(minutes=2):
+        manifestation.is_charged = False
+        manifestation.save()
+    if manifestation.last_charged and timezone.now() > manifestation.last_charged + timedelta(minutes=1):
+        manifestation.can_charge = True
+        manifestation.save()
+    context = {
+        'manifestation': manifestation,
+        'next_charge_time': manifestation.next_charge_time()
+    }
+    
     return render(request, 'manifest/view_manifestation.html', {'manifestation': manifestation})
 
 @login_required
