@@ -94,7 +94,7 @@ main {
 }
 
 #logo {
-    max-width: 200px;
+    max-width: 150px;
 }
 
 footer {
@@ -155,6 +155,22 @@ a:hover {
     justify-content: space-between;
     align-items: center; 
 
+}
+
+.center {
+    text-align: center;
+}
+
+.login-button {
+    background-color: var(--rosy-brown);
+    color: var(--text-color-dark);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    font-size: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 form {

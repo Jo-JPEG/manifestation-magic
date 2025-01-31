@@ -4,15 +4,18 @@
 {% block title %}Login{% endblock %}
 
 {% block content %}
-  <p>welcome</p>
+  <div class="center">
+  <p>Welcome to Manifestation Magic!</p>
   <img id="logo" src="{%static 'manifest/images/placeholder-logo.png'%}" alt="Manifestation Magic Logo">
-
-  <h2>Login</h2>
+  </div>
   
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Login</button>
+    <div class="center">
+      <button class="login-button" type="submit">Login</button>
+    </div>
+    
   </form>
   <p>Don't have an account? <a href="{% url 'signup' %}">Register here</a></p>
 {% endblock %}
