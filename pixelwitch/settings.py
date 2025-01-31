@@ -31,7 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["127.0.0.1", "manifestation-magic-d55b183502af.herokuapp.com"]
 
-CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://*.herokuapp.com']
 
 # Application definition
 

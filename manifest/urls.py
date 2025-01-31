@@ -14,7 +14,7 @@ urlpatterns = [
     path('public-manifestations/', views.public_manifestations, name='public_manifestations'),
     path('manifestation/charge/<slug:slug>/', views.charge_manifestation, name='charge_manifestation'),
     path('profile/', views.profile, name='profile'),
-    path('change-password/', auth_views.PasswordChangeView.as_view(template_name="manifest/change_password.html"), name='change_password'),
+    path('change-password/', auth_views.PasswordChangeView.as_view(template_name="manifest/change_password.html",success_url="/"), name='change_password'),
 ]
 
 if settings.DEBUG:
