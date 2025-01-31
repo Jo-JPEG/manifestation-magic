@@ -77,3 +77,6 @@ def profile(request):
 def change_password(request):
     # Your change password logic here
     return render(request, 'manifest/change_password.html')
+
+def success(request):
+    return render(request, 'manifest/success.html')
