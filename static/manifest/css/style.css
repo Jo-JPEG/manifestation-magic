@@ -157,6 +157,15 @@ a:hover {
 
 }
 
+.list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
 .center {
     text-align: center;
 }
@@ -171,6 +180,28 @@ a:hover {
     margin: 10px;
     font-size: 2rem;
     box-shadow: 3px 3px var(--outer-space);
+}
+
+.login-button:hover {
+    background-color: var(--outer-space);
+    color: var(--text-color-light);
+}
+
+.large-button {
+    background-color: var(--rosy-brown);
+    color: var(--text-color-dark);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    font-size: 2rem;
+    box-shadow: 3px 3px var(--outer-space);
+}
+
+.large-button:hover {
+    background-color: var(--outer-space);
+    color: var(--text-color-light);
 }
 
 form {

@@ -5,7 +5,8 @@
 {% if user.is_authenticated %}
     <h1>Welcome, {{ user.display_name }}!</h1>
 
-    <p>Your manifestations:</p>
+    <div class="list-container">
+        <p>Your manifestations:</p>
     <ul>
         {% for manifestation in manifestations %}
             <li>
@@ -15,8 +16,10 @@
             <li>You don't have any current manifestations.</li>  <!-- Debug statement -->
         {% endfor %}
     </ul>
+    </div>
+    
 
-    <a href="{% url 'create_manifestation' %}">Create a new manifestation</a>
+    <a class="large-button" href="{% url 'create_manifestation' %}">Create a new manifestation</a>
 
 {% else %}
     <h1>Welcome to Manifestation Magic!</h1>
