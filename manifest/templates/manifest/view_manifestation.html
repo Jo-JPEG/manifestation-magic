@@ -6,6 +6,7 @@
 <div class="manifestation_container">
 
     <div class="{{ manifestation.style_choice }}">
+        {% if user == manifestation.owner %}
         <div class="info-container">
             {% if manifestation.is_public %}
             <p><i class="fa-solid fa-bullhorn" title="public"></i>
@@ -18,6 +19,7 @@
             <p><i class="fa-solid fa-lock" title="private"></i></p>
             {% endif %}
         </div> 
+        {% endif %}
         <h1>{{ manifestation.title }}</h1>
     <p>{{ manifestation.style_choice }}</p>
 
