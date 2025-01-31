@@ -6,7 +6,7 @@
 {% block content %}
   <div class="center">
   <p>Welcome to Manifestation Magic!</p>
-  <img id="logo" src="{%static 'manifest/images/placeholder-logo.png'%}" alt="Manifestation Magic Logo">
+  <img id="logo" src="{% static 'manifest/images/placeholder-logo.png' %}" alt="Manifestation Magic Logo">
   </div>
   
   <form method="post">
@@ -15,7 +15,7 @@
     <div class="center">
       <button class="login-button" type="submit">Login</button>
     </div>
-    
   </form>
+  <p>Forgot password? <a href="{% url 'password_reset' %}">Reset password</a></p>
   <p>Don't have an account? <a href="{% url 'signup' %}">Register here</a></p>
 {% endblock %}
