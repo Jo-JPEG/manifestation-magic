@@ -70,3 +70,6 @@ def delete_manifestation(request, slug):
 def public_manifestations(request):
     manifestations = Manifestation.objects.filter(is_public=True, is_approved=True)
     return render(request, 'manifest/public_manifestations.html', {'manifestations': manifestations})
+
+def profile(request):
+    return render(request, 'manifest/profile.html')
