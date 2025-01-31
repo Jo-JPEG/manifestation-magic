@@ -8,7 +8,7 @@ from django.http import HttpResponseForbidden
 
 @login_required
 def home(request):
-    manifestations = Manifestation.objects.filter(owner=request.user)
+    manifestations = Manifestation.objects.filter(owner=request.user).order_by('created_on')
     for manifestation in manifestations:
         if manifestation.is_charged and timezone.now() > manifestation.last_charged + timedelta(minutes=2):
             manifestation.is_charged = False
