@@ -222,6 +222,7 @@ Add any frameworks, libraries or programs used while creating your project.
   - AI tools streamlined repetitive tasks, enabling focus on high-level development.
   - Efficiency gains included faster debugging, comprehensive testing, and improved code quality.
   - Challenges included contextual adjustments to AI-generated outputs, which were resolved effectively, enhancing inclusivity.
+  - Copilot did remove a vital piece of code while changing the id to slugs. 
 
 
 ## Deployment & Local Development

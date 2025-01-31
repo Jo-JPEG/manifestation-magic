@@ -126,7 +126,7 @@ a:hover {
 
 .manifestation_container {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -200,6 +200,23 @@ a:hover {
 }
 
 .large-button:hover {
+    background-color: var(--outer-space);
+    color: var(--text-color-light);
+}
+
+.charge-button {
+    background-color: var(--rosy-brown);
+    color: var(--text-color-dark);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    font-size: 2rem;
+    box-shadow: 3px 3px var(--outer-space);
+}
+
+.charge-button:hover {
     background-color: var(--outer-space);
     color: var(--text-color-light);
 }

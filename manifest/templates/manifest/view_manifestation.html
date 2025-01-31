@@ -32,7 +32,7 @@
         {% if user == manifestation.owner %}
             <form action="{% url 'charge_manifestation' manifestation.slug %}" method="POST">
                 {% csrf_token %}
-                <button class="charge-button" type="submit">Charge!</button>
+                <button class="charge-button" type="submit">Charge <i class="fa-solid fa-wand-sparkles"></i></button>
             </form>
         {% else %}
             <p>Only the owner can charge this manifestation.</p>
@@ -45,12 +45,12 @@
             <p>Next charge time is not available</p>
         {% endif %}
     {% endif %}
-    
+ 
     {% if user == manifestation.owner %}
         <a class="large-button" href="{% url 'edit_manifestation' manifestation.slug %}">Edit Manifestation</a>
         <a class="large-button" href="{% url 'delete_manifestation' manifestation.slug %}">Delete Manifestation</a>
     {% endif %}
-    
+</div>    
     <a class="large-button" href="{% url 'home' %}">Back to Home</a>
-</div>
+
 {% endblock %}
