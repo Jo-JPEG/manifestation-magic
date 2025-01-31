@@ -180,6 +180,26 @@ a:hover {
     align-items: center;
     padding: 10px;
     margin: 10px;
+    
+}
+
+.manifestation-list {
+    padding: 5px;
+    margin: 5px;
+    list-style-type: circle;
+    font-size: 1.5rem;
+    color: var(--text-color-dark);
+
+}
+
+.manifestation-list a {
+    color: var(--text-color-dark);
+    text-decoration: none;
+}
+
+.manifestation-list a:hover {
+    text-decoration: underline;
+    background-color: var(--rosy-brown);
 }
 
 .center {
@@ -333,6 +353,11 @@ form li {
 .pastel {
     background-color: var(--sage);
     color: var(--text-color-dark);
+}
+
+.li-moon {
+    background-color: yellow;
+    color: black;
 }
 
 @media only screen and (min-width: 768px) {

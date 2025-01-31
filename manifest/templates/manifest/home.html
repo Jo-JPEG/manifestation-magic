@@ -9,7 +9,7 @@
         <p>Your manifestations:</p>
     <ul>
         {% for manifestation in manifestations %}
-            <li>
+            <li class="manifestation-list">
                 <a href="{% url 'view_manifestation' manifestation.slug %}">{{ manifestation.title }}</a>
             </li>
         {% empty %}
