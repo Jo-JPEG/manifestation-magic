@@ -2,20 +2,24 @@
 
 {% block content %}
 
-<div class="manifestation_container {{ manifestation.style_choice }}">
-    <h1>{{ manifestation.title }}</h1>
-    <p>{{ manifestation.style_choice }}</p>
 
-    {% if manifestation.is_public %}
-    <p><i class="fa-solid fa-bullhorn" title="public"></i>
-        {% if manifestation.is_approved %}
-        <i class="fa-regular fa-circle-check" title="approved"></i>
-        {% else %}
-        <i class="fa-regular fa-circle" title="awaiting approval"></i></p>
-        {% endif %}
-    {% else %}
-    <p><i class="fa-solid fa-lock" title="private"></i></p>
-    {% endif %}
+<div class="manifestation_container">
+
+    <div class="{{ manifestation.style_choice }}">
+        <div class="info-container">
+            {% if manifestation.is_public %}
+            <p><i class="fa-solid fa-bullhorn" title="public"></i>
+                {% if manifestation.is_approved %}
+                <i class="fa-regular fa-circle-check" title="approved"></i>
+                {% else %}
+                <i class="fa-regular fa-circle" title="awaiting approval"></i></p>
+                {% endif %}
+            {% else %}
+            <p><i class="fa-solid fa-lock" title="private"></i></p>
+            {% endif %}
+        </div> 
+        <h1>{{ manifestation.title }}</h1>
+    <p>{{ manifestation.style_choice }}</p>
 
     <div class="description_container">
         <p>{{ manifestation.description }}</p>
@@ -45,10 +49,12 @@
             <p>Next charge time is not available</p>
         {% endif %}
     {% endif %}
+    </div>
+
  
     {% if user == manifestation.owner %}
-        <a class="large-button" href="{% url 'edit_manifestation' manifestation.slug %}">Edit Manifestation</a>
-        <a class="large-button" href="{% url 'delete_manifestation' manifestation.slug %}">Delete Manifestation</a>
+        <a class="large-button" href="{% url 'edit_manifestation' manifestation.slug %}">Edit</a>
+        <a class="large-button" href="{% url 'delete_manifestation' manifestation.slug %}">Delete</a>
     {% endif %}
 </div>    
     <a class="large-button" href="{% url 'home' %}">Back to Home</a>
