@@ -20,7 +20,10 @@
                 <span class="home-info">
                     {% if manifestation.is_public %}
                     <i class="fa-solid fa-bullhorn" title="public"></i>
-                    {% else %}
+                        {% if manifestation.is_approved %}
+                        <i class="fa-regular fa-circle-check" title="approved"></i>
+                        {% else %}<i class="fa-regular fa-circle" title="awaiting approval"></i>
+                        {% endif %}
                     {% endif %}
                 </span>
              
