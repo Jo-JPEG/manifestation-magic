@@ -1,40 +1,52 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>{% block title %}Manifestation Magic{% endblock %}</title>
-    <link rel="icon" type="image/x-icon" href="{% static 'manifest/images/favicon.ico' %}">
-    <link rel="stylesheet" href="{% static 'manifest/css/style.css' %}">
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{% static 'manifest/images/favicon.ico' %}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Caveat:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Griffy&family=Lexend:wght@100..900&family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'manifest/css/style.css' %}" />
+  </head>
+  <body>
     <header>
-        <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'about' %}">About</a></li>
-                <li><a href="{% url 'public_manifestations' %}">Shared</a></li>
-                {% if user.is_authenticated %}
-                    <li><a href="{% url 'logout' %}">Logout</a></li>
-                    <li><a href="{% url 'profile' %}">Profile</a></li>
-                {% else %}
-                    <li><a href="{% url 'login' %}">Login</a></li>
-                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
-                {% endif %}
-            </ul>
-        </nav>
+      <input type="checkbox" id="nav-toggle" name="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'public_manifestations' %}">Shared</a></li>
+          {% if user.is_authenticated %}
+          <li><a href="{% url 'logout' %}">Logout</a></li>
+          <li><a href="{% url 'profile' %}">Profile</a></li>
+          {% else %}
+          <li><a href="{% url 'login' %}">Login</a></li>
+          <li><a href="{% url 'signup' %}">Sign Up</a></li>
+          {% endif %}
+        </ul>
+      </nav>
     </header>
-    
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
-    
+
+    <main>{% block content %} {% endblock %}</main>
+
     <footer>
-        <p>&copy; 2025 Manifestation Magic. All rights reserved.</p>
+      <p>&copy; 2025 Manifestation Magic. All rights reserved.</p>
     </footer>
-    <script src="https://kit.fontawesome.com/d1240d6279.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/d1240d6279.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

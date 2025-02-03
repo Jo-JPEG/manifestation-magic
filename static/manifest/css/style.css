@@ -1,9 +1,9 @@
 /* css variables  */
 
 :root {
-    --primary-font: sans-serif;
-    --secondary-font: serif;
-    --brand-font:  serif;
+    --primary-font: 'Figtree', sans-serif;
+    --secondary-font: 'Caveat', serif;
+    --brand-font:  'Griffy', serif;
     --text-color-dark: #313435;
     --text-color-light: #FCF4EE;
     --background-color: #FCF4EE;
@@ -106,8 +106,18 @@ footer {
 }
 
 h1 {
+    font-family: var(--secondary-font);
     color: var(--text-color-dark);
     text-align: center;
+}
+
+h2, h3 {
+    font-family: var(--secondary-font);
+    color: var(--text-color-dark);
+}
+
+.title {
+    font-family: var(--brand-font);
 }
 
 p {
