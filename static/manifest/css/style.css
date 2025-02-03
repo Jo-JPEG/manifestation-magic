@@ -324,18 +324,30 @@ form li {
 }
 
 .nature {
-    background-color: green;
-    color: white;
+    background-color: var(--seashell);
+    color: var(--text-color-dark);
+    background-image: url('/static/manifest/images/nature.png');
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 .sun {
-    background-color: red;
-    color: white;
+    background-color: orangered;
+    color: var(--text-color-dark);
+    background-image: url('/static/manifest/images/sun.png');
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 .stars {
-    background-color: blue;
-    color: white;
+    background-color: var(--outer-space);
+    color: var(--text-color-light);
+    background-image: url('/static/manifest/images/stars.png');
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 .cosmic {
@@ -349,8 +361,12 @@ form li {
 }
 
 .hearts {
-    background-color: pink;
-    color: white;
+    background-color: var(--sage);
+    color: var(--text-color-dark);
+    background-image: url('/static/manifest/images/hearts.png');
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 .antique {
