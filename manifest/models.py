@@ -36,11 +36,11 @@ class Manifestation(models.Model):
     def save(self, *args, **kwargs):
         now = timezone.now()
         if self.last_charged:
-            if now >= self.last_charged + timedelta(minutes=2):
+            if now >= self.last_charged + timedelta(hours=24):
                 self.is_charged = False
             else:
                 self.is_charged = True
-            if now >= self.last_charged + timedelta(minutes=1):
+            if now >= self.last_charged + timedelta(hours=12):
                 self.can_charge = True
             else:
                 self.can_charge = False
@@ -58,7 +58,7 @@ class Manifestation(models.Model):
     def next_charge_time(self):
         if self.last_charged is None:
             return None
-        return self.last_charged + timedelta(minutes=1)
+        return self.last_charged + timedelta(hours=12)
 
     def __str__(self):
         return self.title

@@ -10,10 +10,10 @@ from django.http import HttpResponseForbidden
 def home(request):
     manifestations = Manifestation.objects.filter(owner=request.user).order_by('created_on')
     for manifestation in manifestations:
-        if manifestation.is_charged and timezone.now() > manifestation.last_charged + timedelta(minutes=2):
+        if manifestation.is_charged and timezone.now() > manifestation.last_charged + timedelta(hours=24):
             manifestation.is_charged = False
             manifestation.save()
-        if manifestation.last_charged and timezone.now() > manifestation.last_charged + timedelta(minutes=1):
+        if manifestation.last_charged and timezone.now() > manifestation.last_charged + timedelta(hours=12):
             manifestation.can_charge = True
             manifestation.save()
 
@@ -45,10 +45,10 @@ def view_manifestation(request, slug):
     if manifestation.owner != request.user and not (manifestation.is_public and manifestation.is_approved):
         return render(request, 'manifest/forbidden.html')
     
-    if manifestation.is_charged and timezone.now() > manifestation.last_charged + timedelta(minutes=2):
+    if manifestation.is_charged and timezone.now() > manifestation.last_charged + timedelta(hours=24):
         manifestation.is_charged = False
         manifestation.save()
-    if manifestation.last_charged and timezone.now() > manifestation.last_charged + timedelta(minutes=1):
+    if manifestation.last_charged and timezone.now() > manifestation.last_charged + timedelta(hours=12):
         manifestation.can_charge = True
         manifestation.save()
     context = {
