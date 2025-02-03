@@ -310,8 +310,12 @@ form li {
 /* style choices  */
 
 .moon { 
-    background-color: yellow;
-    color: black;
+    background-color: var(--outer-space);
+    color: var(--text-color-light);
+    background-image: url('/static/manifest/images/moon.png');
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 .neutral {
@@ -359,10 +363,7 @@ form li {
     color: var(--text-color-dark);
 }
 
-.li-moon {
-    background-color: yellow;
-    color: black;
-}
+
 
 @media only screen and (min-width: 768px) {
 
