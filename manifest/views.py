@@ -2,10 +2,12 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.utils import timezone
 from datetime import timedelta
+from django.contrib import messages
 from .models import Manifestation
 from .forms import ManifestationForm  # Assuming you have a form for Manifestation
 from django.http import HttpResponseForbidden
 from django.contrib.auth import get_user_model
+
 
 @login_required
 def home(request):
@@ -78,6 +80,7 @@ def edit_manifestation(request, slug):
         if form.is_valid():
             manifestation.is_approved = False  # Set is_approved to False
             form.save()
+            messages.add_message(request, messages.SUCCESS, 'Your manifestation has been updated successfully. If it is set to public, it will be reviewed by an admin.')
             return redirect('view_manifestation', slug=manifestation.slug)
     else:
         form = ManifestationForm(instance=manifestation)
@@ -88,6 +91,7 @@ def delete_manifestation(request, slug):
     manifestation = get_object_or_404(Manifestation, slug=slug)
     if request.method == 'POST':
         manifestation.delete()
+        messages.add_message(request, messages.SUCCESS, 'Your manifestation has been deleted successfully.')
         return redirect('home')  # Redirect to a different view after deletion
     return render(request, 'manifest/delete_manifestation.html', {'manifestation': manifestation})
 
@@ -110,5 +114,6 @@ def delete_account(request):
     if request.method == 'POST':
         user = request.user
         user.delete()
+        messages.add_message(request, messages.SUCCESS, 'Your account has been deleted successfully.')
         return redirect('home')  # Redirect to home page after deletion
     return render(request, 'manifest/delete_account_confirm.html')
