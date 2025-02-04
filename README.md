@@ -108,15 +108,13 @@ View the live site here [Manifestation Magic](https://manifestation-magic-d55b18
 
 ### Typography
 
-If you've imported fonts to use in your project, add some information about them here. You can include information like:
+
+
+[Google Fonts](https://fonts.google.com/) 
 
 Why did you choose the font you have?
 Is this an accessibly friendly font?
 What weights have you included?
-
-I also like to include an image of the fonts chosen as a reference.
-
-[Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
 
 ### Imagery
 
@@ -124,11 +122,9 @@ Use this section to explain what sort of imagery you plan to use through your si
 
 ### Wireframes
 
+ [Balsamiq](https://balsamiq.com/) Was used to create wireframes for mobile and desktop views.
+
 Add the images or links for your wireframes here.
-
-There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
-
-
 
 ## Features
 
@@ -185,8 +181,6 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 ## Technologies Used
 
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
-
 ### Languages Used
 
 - HTML
@@ -200,8 +194,11 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 Add any frameworks, libraries or programs used while creating your project.
 
 - Microsoft Copilot was used (See AI Implementation and Orchestration)
-- Balsamic for initial wireframe creation
-- FireAlpaca for creating custom images 
+- [FireAlpaca](https://firealpaca.com/) for creating custom images 
+- [Google Fonts](https://fonts.google.com/)
+- [Favicon.cc](https://www.favicon.cc/)
+- [coolors](https://coolors.co/)
+- [Balsamiq](https://balsamiq.com/) was used for initial wireframe creation.
 
 ## AI Implementation and Orchestration
 
@@ -284,6 +281,11 @@ If you have used some code in your project that you didn't write, this is the pl
 Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
 
 ###  Media
+
+- [Google Fonts](https://fonts.google.com/)
+- [Favicon.cc](https://www.favicon.cc/)
+- [coolors](https://coolors.co/)
+- [Balsamiq](https://balsamiq.com/)
 
 If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
   
