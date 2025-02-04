@@ -6,10 +6,10 @@
 <h1>Public Manifestations</h1>
 <p>These manifestations are shared by other users.</p>
 <div class="list-container">
-    <ul class="public-list">
+    <ul>
         {% for manifestation in manifestations %}
-            <li>
-                <a href="{% url 'view_manifestation' manifestation.slug %}"><i class="fa-solid fa-sun"></i>{{ manifestation.title }}</a> <i class="fa-solid fa-feather-pointed"></i> {{ manifestation.owner }}
+            <li class="public-list">
+                <a href="{% url 'view_manifestation' manifestation.slug %}"><i class="fa-solid fa-sun"></i> {{ manifestation.title }}</a> <i class="fa-solid fa-feather-pointed"></i> {{ manifestation.owner }}
             </li>
         {% empty %}
             <li>No public manifestations available.</li>
