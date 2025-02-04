@@ -5,6 +5,7 @@ from datetime import timedelta
 from .models import Manifestation
 from .forms import ManifestationForm  # Assuming you have a form for Manifestation
 from django.http import HttpResponseForbidden
+from django.contrib.auth import get_user_model
 
 @login_required
 def home(request):
@@ -103,3 +104,11 @@ def change_password(request):
 
 def success(request):
     return render(request, 'manifest/success.html')
+
+@login_required
+def delete_account(request):
+    if request.method == 'POST':
+        user = request.user
+        user.delete()
+        return redirect('home')  # Redirect to home page after deletion
+    return render(request, 'manifest/delete_account_confirm.html')

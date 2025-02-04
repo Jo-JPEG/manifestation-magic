@@ -16,6 +16,7 @@ urlpatterns = [
     path('profile/', views.profile, name='profile'),
     path('change-password/', auth_views.PasswordChangeView.as_view(template_name="manifest/change_password.html", success_url='/success/'), name='change_password'),
     path('success/', views.success, name='success'),  # Add this line
+    path('delete_account/', views.delete_account, name='delete_account'),
 ]
 
 if settings.DEBUG:
