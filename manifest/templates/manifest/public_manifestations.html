@@ -9,7 +9,7 @@
     <ul>
         {% for manifestation in manifestations %}
             <li class="public-list">
-                <a href="{% url 'view_manifestation' manifestation.slug %}"><i class="fa-solid fa-sun"></i> {{ manifestation.title }}</a> <i class="fa-solid fa-feather-pointed"></i> {{ manifestation.owner }}
+                <a href="{% url 'view_manifestation' manifestation.slug %}"><i class="fa-solid fa-circle"></i> {{ manifestation.title }}</a> <i class="fa-solid fa-feather-pointed"></i> {{ manifestation.owner }}
             </li>
         {% empty %}
             <li>No public manifestations available.</li>
