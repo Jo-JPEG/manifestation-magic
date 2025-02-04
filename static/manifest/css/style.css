@@ -329,8 +329,9 @@ form li {
 }
 
 .neutral {
-    background-color: var(--box-color);
+    background-color: none;
     color: var(--text-color-dark);
+    border: #494B4C 1px solid;
 }
 
 .nature {
@@ -343,7 +344,7 @@ form li {
 }
 
 .sun {
-    background-color: orangered;
+    background-color: #d78a76;
     color: var(--text-color-dark);
     background-image: url('/static/manifest/images/sun.png');
     background-size: 200px 200px;
@@ -366,8 +367,16 @@ form li {
 }
 
 .witchy {
-    background-color: black;
+    background-color: var(--onyx);
     color: white;
+    background-image: url('/static/manifest/images/witchy.png');
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.witchy h1 {
+    color: var(--text-color-light);
 }
 
 .hearts {
