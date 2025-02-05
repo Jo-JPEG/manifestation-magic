@@ -136,8 +136,8 @@ a:hover {
 
 .manifestation_container {
     width: 90%;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -282,7 +282,7 @@ a:hover {
 }
 
 .charge-button {
-    background-color: var(--sage);
+    background-color: var(--seashell);
     color: var(--text-color-dark);
     border: none;
     border-radius: 5px;
@@ -296,6 +296,7 @@ a:hover {
 .charge-button:hover {
     background-color: var(--outer-space);
     color: var(--text-color-light);
+    box-shadow: var(--onyx);
 }
 
 form {
@@ -344,13 +345,18 @@ form li {
     color: var(--onyx);
 }
 
+.style-container {
+    padding: 10px;
+    margin: 10px;
+}
+
 /* style choices  */
 
 .moon { 
     background-color: var(--outer-space);
     color: var(--text-color-light);
     background-image: url('/static/manifest/images/moon.png');
-    background-size: 200px 200px;
+    background-size: 300px 300px;
     background-repeat: no-repeat;
     background-position: top left;
 }
@@ -358,6 +364,11 @@ form li {
 .moon h1 {
     color: var(--text-color-light);
     font-weight: 200;
+    text-shadow: 1px 1px var(--onyx);
+}
+
+.moon p {
+    text-shadow: 1px 1px var(--onyx);
 }
 
 .neutral {
@@ -367,7 +378,7 @@ form li {
 }
 
 .nature {
-    background-color: var(--sage);
+    background-color: #A9B18F;
     color: var(--text-color-dark);
     background-image:  url('/static/manifest/images/nature2.png');
     background-repeat: no-repeat;

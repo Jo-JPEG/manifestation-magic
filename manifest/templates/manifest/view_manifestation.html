@@ -5,7 +5,7 @@
 
 <div class="manifestation_container">
 
-    <div class="{{ manifestation.style_choice }}">
+    <div class="{{ manifestation.style_choice }} style-container">
         {% if user == manifestation.owner %}
         <div class="info-container">
             {% if manifestation.is_public %}
@@ -21,7 +21,6 @@
         </div> 
         {% endif %}
         <h1>{{ manifestation.title }}</h1>
-    <p>{{ manifestation.style_choice }}</p>
 
     <div class="description_container">
         <p>{{ manifestation.description }}</p>
@@ -34,22 +33,28 @@
     {% else %}
         <p>Charged: No</p>
     {% endif %}
-    {% if manifestation.can_charge %}
-        {% if user == manifestation.owner %}
-            <form action="{% url 'charge_manifestation' manifestation.slug %}" method="POST">
-                {% csrf_token %}
-                <button class="charge-button" type="submit">Charge <i class="fa-solid fa-wand-sparkles"></i></button>
-            </form>
+
+    {% if user == manifestation.owner %}
+
+
+        {% if manifestation.can_charge %}
+            
+                <form action="{% url 'charge_manifestation' manifestation.slug %}" method="POST">
+                    {% csrf_token %}
+                    <button class="charge-button" type="submit">Charge <i class="fa-solid fa-wand-sparkles"></i></button>
+                </form>
+            
         {% else %}
-            <p>Only the owner can charge this manifestation.</p>
+            <p>Cannot charge at this time</p>
+            {% if manifestation.next_charge_time %}
+                <p>You can recharge your manifestation again at {{ manifestation.next_charge_time }}</p>
+            {% else %}
+                <p>Next charge time is not available</p>
+            {% endif %}
         {% endif %}
+
     {% else %}
-        <p>Cannot charge at this time</p>
-        {% if manifestation.next_charge_time %}
-            <p>You can recharge your manifestation again at {{ manifestation.next_charge_time }}</p>
-        {% else %}
-            <p>Next charge time is not available</p>
-        {% endif %}
+     <p>Only the owner can charge this manifestation.</p>
     {% endif %}
     </div>
 
