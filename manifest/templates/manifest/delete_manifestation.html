@@ -1,11 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Are you sure you want to delete this manifestation?</h2>
+<div class="delete-container">
+    <h2>Are you sure you want to delete this manifestation?</h2>
 <p>{{ manifestation.title }}</p>
 <form method="POST">
     {% csrf_token %}
     <button class="large-button" type="submit">Yes, delete</button>
 </form>
 <a href="{% url 'view_manifestation' manifestation.slug %}">Cancel</a>
+</div>
+
 {% endblock %}

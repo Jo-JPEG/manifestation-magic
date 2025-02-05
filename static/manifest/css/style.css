@@ -350,6 +350,19 @@ form li {
     margin: 10px;
 }
 
+.delete-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.delete-container form {
+    box-shadow: none;
+}
+
 /* style choices  */
 
 .moon { 

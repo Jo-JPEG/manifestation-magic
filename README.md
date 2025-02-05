@@ -195,6 +195,7 @@ Add any frameworks, libraries or programs used while creating your project.
 
 - Microsoft Copilot was used (See AI Implementation and Orchestration)
 - [FireAlpaca](https://firealpaca.com/) for creating custom images 
+- [dbdiagram.io ](https://dbdiagram.io/)
 - [Google Fonts](https://fonts.google.com/)
 - [Favicon.cc](https://www.favicon.cc/)
 - [coolors](https://coolors.co/)
