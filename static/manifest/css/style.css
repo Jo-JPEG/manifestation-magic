@@ -403,10 +403,10 @@ form li {
 .witchy {
     background-color: var(--onyx);
     color: white;
-    background-image: url('/static/manifest/images/witchy.png');
-    background-size: 200px 200px;
+    background-image: url('/static/manifest/images/witchy.png'), url('/static/manifest/images/witchy2.png');
+    background-size: 300px 300px, 200px 200px;
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: top left, bottom right;
 }
 
 .witchy h1 {
