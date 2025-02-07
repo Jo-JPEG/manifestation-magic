@@ -118,6 +118,7 @@ main {
 }
 
 .brand {
+    display: none;
     font-family: var(--brand-font);
     font-size: 200%;
     color: var(--sage);
@@ -536,6 +537,10 @@ form li {
 
     #nav-logo img {
         max-width: 100px;
+    }
+
+    .brand {
+        display: block;
     }
 
     .manifestation_container {
