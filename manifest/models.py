@@ -7,6 +7,7 @@ from django.db.models.signals import pre_save
 from django.dispatch import receiver
 import itertools
 
+
 class Manifestation(models.Model):
     STYLE_CHOICES = [
         ('moon', 'Moon'),
@@ -21,8 +22,9 @@ class Manifestation(models.Model):
         ('pastel', 'Pastel'),
     ]
 
-    owner = models.ForeignKey(CustomUser, on_delete=models.CASCADE, null=True, blank=True)
-    title = models.CharField(max_length=100) 
+    owner = models.ForeignKey(
+        CustomUser, on_delete=models.CASCADE, null=True, blank=True)
+    title = models.CharField(max_length=100)
     description = models.TextField(max_length=500)
     style_choice = models.CharField(max_length=10, choices=STYLE_CHOICES)
     slug = models.SlugField(unique=True, max_length=255, blank=True, null=True)
@@ -62,6 +64,7 @@ class Manifestation(models.Model):
 
     def __str__(self):
         return self.title
+
 
 @receiver(pre_save, sender=Manifestation)
 def set_slug(sender, instance, **kwargs):

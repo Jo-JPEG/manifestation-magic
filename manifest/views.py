@@ -4,14 +4,15 @@ from django.utils import timezone
 from datetime import timedelta
 from django.contrib import messages
 from .models import Manifestation
-from .forms import ManifestationForm  # Assuming you have a form for Manifestation
+from .forms import ManifestationForm
 from django.http import HttpResponseForbidden
 from django.contrib.auth import get_user_model
 
 
 @login_required
 def home(request):
-    manifestations = Manifestation.objects.filter(owner=request.user).order_by('created_on')
+    manifestations = Manifestation.objects.filter(
+owner=request.user).order_by('created_on')
     for manifestation in manifestations:
         if manifestation.is_charged and timezone.now() > manifestation.last_charged + timedelta(hours=24):
             manifestation.is_charged = False
@@ -26,8 +27,10 @@ def home(request):
 
     return render(request, 'manifest/home.html', context)
 
+
 def about(request):
     return render(request, 'about.html')
+
 
 @login_required
 def create_manifestation(request):
@@ -42,12 +45,13 @@ def create_manifestation(request):
         form = ManifestationForm()
     return render(request, 'manifest/create_manifestation.html', {'form': form})
 
+
 def view_manifestation(request, slug):
     manifestation = get_object_or_404(Manifestation, slug=slug)
     
     if manifestation.owner != request.user and not (manifestation.is_public and manifestation.is_approved):
         return render(request, 'manifest/forbidden.html')
-    
+
     if manifestation.is_charged and timezone.now() > manifestation.last_charged + timedelta(hours=24):
         manifestation.is_charged = False
         manifestation.save()
@@ -58,8 +62,8 @@ def view_manifestation(request, slug):
         'manifestation': manifestation,
         'next_charge_time': manifestation.next_charge_time()
     }
-    
     return render(request, 'manifest/view_manifestation.html', {'manifestation': manifestation})
+
 
 @login_required
 def charge_manifestation(request, slug):
@@ -71,6 +75,7 @@ def charge_manifestation(request, slug):
         manifestation.save()
         return redirect('view_manifestation', slug=manifestation.slug)
     return render(request, 'manifest/view_manifestation.html', {'manifestation': manifestation})
+
 
 @login_required
 def edit_manifestation(request, slug):
@@ -86,6 +91,7 @@ def edit_manifestation(request, slug):
         form = ManifestationForm(instance=manifestation)
     return render(request, 'manifest/edit_manifestation.html', {'form': form, 'manifestation': manifestation})
 
+
 @login_required
 def delete_manifestation(request, slug):
     manifestation = get_object_or_404(Manifestation, slug=slug)
@@ -95,19 +101,24 @@ def delete_manifestation(request, slug):
         return redirect('home')  # Redirect to a different view after deletion
     return render(request, 'manifest/delete_manifestation.html', {'manifestation': manifestation})
 
+
 def public_manifestations(request):
     manifestations = Manifestation.objects.filter(is_public=True, is_approved=True)
     return render(request, 'manifest/public_manifestations.html', {'manifestations': manifestations})
 
+
 def profile(request):
     return render(request, 'manifest/profile.html')
+
 
 def change_password(request):
     # Your change password logic here
     return render(request, 'manifest/change_password.html')
 
+
 def success(request):
     return render(request, 'manifest/success.html')
+
 
 @login_required
 def delete_account(request):
