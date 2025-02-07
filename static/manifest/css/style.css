@@ -378,7 +378,7 @@ form li {
 .moon { 
     background-color: var(--outer-space);
     color: var(--text-color-light);
-    background-image: url('/static/manifest/images/moon.png');
+    background-image: url('/static/manifest/images/moon.webp');
     background-size: 300px 300px;
     background-repeat: no-repeat;
     background-position: top left;
