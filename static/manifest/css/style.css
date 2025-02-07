@@ -6,15 +6,17 @@
     --brand-font:  'Griffy', serif;
     --text-color-dark: #313435;
     --text-color-light: #FCF4EE;
-    --background-color: #FCF4EE;
+    --background-color: #F9E9DC;
     --navbar-color: #313435;
     --navbar-pop-color: #494B4C;
-    --box-color: #A9B18F; 
     --sage: #A9B18F;
     --rosy-brown: #C89FA3;
-    --seashell: #FCF4EE;
+    --seashell: #fcf5ee;
     --onyx: #313435;
     --outer-space: #494B4C;
+    --powder-blue: #AEC5EB;
+    --fairy-tale: #E3BAC6; 
+    --coral: #EB8258;
 
 }
 
@@ -313,7 +315,7 @@ form {
     width: 90%;
     margin: 0 auto;
     padding: 20px;
-    background-color: var(--seashell);
+    background-color: var(--background-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -401,17 +403,17 @@ form li {
 }
 
 .nature {
-    background-color: #A9B18F;
+    background-color: var(--sage);
     color: var(--text-color-dark);
-    background-image:  url('/static/manifest/images/nature2.png');
+    background-image:  url('/static/manifest/images/nature2.webp');
     background-repeat: no-repeat;
     background-position: cover;
 }
 
 .sun {
-    background-color: #DAA294;
+    background-color: var(--coral);
     color: var(--text-color-dark);
-    background-image: url('/static/manifest/images/sun.png');
+    background-image: url('/static/manifest/images/sun.webp');
     background-repeat: no-repeat;
     background-size: 800px 800px;
     background-position: cover;
@@ -420,8 +422,7 @@ form li {
 .stars {
     background-color: var(--outer-space);
     color: var(--text-color-light);
-    background-image: url('/static/manifest/images/stars.png');
-    background-size: 200px 200px;
+    background-image: url('/static/manifest/images/stars.webp');
     background-repeat: no-repeat;
     background-position: bottom right;
 }
@@ -448,9 +449,9 @@ form li {
 }
 
 .hearts {
-    background-color: var(--rosy-brown);
+    background-color: var(--fairy-tale);
     color: var(--text-color-dark);
-    background-image: url('/static/manifest/images/hearts.png'), url('/static/manifest/images/hearts2.png');
+    background-image: url('/static/manifest/images/hearts.webp'), url('/static/manifest/images/hearts2.webp');
     background-size: 300px 300px;
     background-repeat: no-repeat;
     background-position: bottom right, top left;
@@ -459,14 +460,15 @@ form li {
 .antique {
     background-color: var(--rosy-brown);
     color: var(--text-color-dark);
-    background-image: url('/static/manifest/images/antique.png'), url('/static/manifest/images/antique2.png');
+    background-image: url('/static/manifest/images/antique.webp'), url('/static/manifest/images/antique2.webp');
     background-size: 200px 200px, auto;
     background-repeat: no-repeat;
     background-position: bottom right;
 }
 
 .pastel {
-    background-color: #E6E6FA;
+    /* background-color: #E6E6FA; */
+    background-color: var(--fairy-tale);
     color: var(--text-color-dark);
     background-image: url('/static/manifest/images/pastel.png'), url('/static/manifest/images/pastel2.png');
     background-size: 300px 300px, 300px 300px;
