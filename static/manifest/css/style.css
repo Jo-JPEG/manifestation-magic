@@ -114,21 +114,14 @@ main {
 }
 
 footer {
-    background-color: none;
     color: var(--text-color-dark);
     padding: 20px;
     text-align: center;
     margin-top: 20px;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: var(--secondary-font);
-    text-align: center;
-}
-
-h2, h3 {
-    font-family: var(--secondary-font);
-    color: var(--text-color-dark);
 }
 
 .title {
@@ -312,7 +305,6 @@ a:hover {
 .charge-button:hover {
     background-color: var(--outer-space);
     color: var(--text-color-light);
-    box-shadow: var(--onyx);
 }
 
 form {
@@ -401,7 +393,6 @@ form li {
 }
 
 .neutral {
-    background-color: none;
     color: var(--text-color-dark);
     border: #494B4C 1px solid;
 }
@@ -411,7 +402,7 @@ form li {
     color: var(--text-color-dark);
     background-image:  url('/static/manifest/images/nature2.webp');
     background-repeat: no-repeat;
-    background-position: cover;
+    background-position: left;
 }
 
 .sun {
@@ -420,7 +411,7 @@ form li {
     background-image: url('/static/manifest/images/sun.webp');
     background-repeat: no-repeat;
     background-size: 800px 800px;
-    background-position: cover;
+    background-position: center;
 }
 
 .stars {
@@ -435,7 +426,7 @@ form li {
     background-color: #37092F;
     color: white;
     background-image: url('/static/manifest/images/cosmic.png');
-    background-position: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -467,7 +458,7 @@ form li {
     background-image: url('/static/manifest/images/antique.webp'), url('/static/manifest/images/antique2.webp');
     background-size: 200px 200px, auto;
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom right, center;
 }
 
 .pastel {
