@@ -119,10 +119,6 @@ main {
 
 .brand {
     display: none;
-    font-family: var(--brand-font);
-    font-size: 200%;
-    color: var(--sage);
-    margin: 10px;
 }
 
 footer {
@@ -567,6 +563,11 @@ form li {
 
     .brand {
         display: block;
+        font-family: var(--brand-font);
+        text-shadow: 1px 1px black;
+        font-size: 190%;
+        color: var(--sage);
+        margin: 10px;
     }
 }
 
@@ -579,5 +580,9 @@ form li {
 
     form {
         width: 50%;
+    }
+
+    .brand {
+        font-size: 200%;
     }
 }
