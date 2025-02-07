@@ -2,23 +2,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
     <title>{% block title %}Manifestation Magic{% endblock %}</title>
     <link
       rel="icon"
       type="image/x-icon"
-      href="{% static 'manifest/images/favicon.ico' %}">
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+      href="{% static 'manifest/images/favicon.ico' %}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Caveat:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Griffy&family=Lexend:wght@100..900&family=Square+Peg&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'manifest/css/style.css' %}" >
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Figtree:wght@500&family=Griffy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'manifest/css/style.css' %}" />
   </head>
   <body>
     <header>
-      <input type="checkbox" id="nav-toggle" name="nav-toggle">
+      <input type="checkbox" id="nav-toggle" name="nav-toggle" />
       <label for="nav-toggle" class="nav-toggle-label"
         ><i class="fa-solid fa-bars"></i
       ></label>
@@ -37,13 +39,11 @@
         </ul>
       </nav>
     </header>
-     <!-- displaying Django messages -->
+    <!-- displaying Django messages -->
     {% if messages %}
     <div class="messages">
       {% for message in messages %}
-      <div class="message {{ message.tags }}">
-        {{ message }}
-      </div>
+      <div class="message {{ message.tags }}">{{ message }}</div>
       {% endfor %}
     </div>
     {% endif %}
