@@ -425,7 +425,7 @@ form li {
 .cosmic {
     background-color: #37092F;
     color: white;
-    background-image: url('/static/manifest/images/cosmic.png');
+    background-image: url('/static/manifest/images/cosmic.webp');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -433,7 +433,7 @@ form li {
 .witchy {
     background-color: var(--onyx);
     color: white;
-    background-image: url('/static/manifest/images/witchy.png'), url('/static/manifest/images/witchy2.png');
+    background-image: url('/static/manifest/images/witchy.webp'), url('/static/manifest/images/witchy2.webp');
     background-size: 300px 300px, 200px 200px;
     background-repeat: no-repeat;
     background-position: top left, bottom right;
@@ -465,7 +465,7 @@ form li {
     /* background-color: #E6E6FA; */
     background-color: var(--fairy-tale);
     color: var(--text-color-dark);
-    background-image: url('/static/manifest/images/pastel.png'), url('/static/manifest/images/pastel2.png');
+    background-image: url('/static/manifest/images/pastel.webp'), url('/static/manifest/images/pastel2.webp');
     background-size: 300px 300px, 300px 300px;
     background-repeat: no-repeat;
     background-position: top left, bottom right;
