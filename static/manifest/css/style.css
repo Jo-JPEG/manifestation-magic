@@ -539,9 +539,6 @@ form li {
         max-width: 100px;
     }
 
-    .brand {
-        display: block;
-    }
 
     .manifestation_container {
         width: 80%;
@@ -566,6 +563,10 @@ form li {
 
     #nav-logo img {
         max-width: 140px;
+    }
+
+    .brand {
+        display: block;
     }
 }
 
