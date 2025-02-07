@@ -185,7 +185,7 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 - HTML
 - CSS
-- Python
+-  
 - Django
 
 
