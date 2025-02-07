@@ -34,6 +34,10 @@ body {
     flex-direction: column;
 }
 
+main {
+    padding-top: 50px;
+}
+
 header {
     position: fixed;
     z-index: 99;
@@ -111,6 +115,13 @@ main {
 
 #logo {
     max-width: 150px;
+}
+
+.brand {
+    font-family: var(--brand-font);
+    font-size: 200%;
+    color: var(--sage);
+    margin: 10px;
 }
 
 footer {
@@ -481,6 +492,11 @@ form li {
         flex-direction: row;
         justify-content: space-between;
     }
+
+    main {
+        padding-top: 2px;
+    }
+
     nav {
         display: flex;
         position: static;
@@ -490,7 +506,7 @@ form li {
         flex-direction: row;
         justify-content: flex-start;
         margin: 0%;
-        padding-top: 5px;
+        padding-top: 1px;
         border: 1px solid var(--navbar-color);
         border-radius: 0 0 0 0;
         background-color: var(--navbar-color);
@@ -501,9 +517,14 @@ form li {
         justify-content: flex-end;
         width: 90%;
         font-size: 120%;
+        letter-spacing: 1px;
+        padding: 2px;
+        margin: 2px;
     }
 
-   
+    nav a {
+        padding: 1px;
+    }
 
     .nav-toggle-label {
         display: none;
@@ -514,7 +535,7 @@ form li {
     }
 
     #nav-logo img {
-        max-width: 150px;
+        max-width: 100px;
     }
 
     .manifestation_container {
@@ -531,10 +552,15 @@ form li {
 
     .nav-list {
         font-size: 160%;
+        letter-spacing: 2px;
     }
 
     form {
         width: 60%;
+    }
+
+    #nav-logo img {
+        max-width: 140px;
     }
 }
 
@@ -542,6 +568,7 @@ form li {
     
     .nav-list {
         font-size: 250%;
+        letter-spacing: 3px;
     }
 
     form {
