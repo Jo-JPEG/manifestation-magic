@@ -476,7 +476,7 @@ form li {
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
 
     header {
         position: static;
@@ -501,7 +501,8 @@ form li {
     .nav-list {
         flex-direction: row;
         justify-content: flex-end;
-        width: 100%;
+        width: 90%;
+        font-size: 120%;
     }
 
    
@@ -515,3 +516,17 @@ form li {
         max-width: 800px;
     }
 } 
+
+@media only screen and (min-width: 768px){
+
+    .nav-list {
+        font-size: 160%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    
+    .nav-list {
+        font-size: 250%;
+    }
+}
