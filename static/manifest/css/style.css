@@ -88,6 +88,10 @@ nav {
     z-index: 99;
 }
 
+#nav-logo {
+    display: none;
+}
+
 
 nav a {
     color: var(--text-color-light);
@@ -495,6 +499,7 @@ form li {
         flex-direction: row;
         justify-content: flex-start;
         margin: 0%;
+        padding-top: 5px;
         border: 1px solid var(--navbar-color);
         border-radius: 0 0 0 0;
         background-color: var(--navbar-color);
@@ -511,6 +516,14 @@ form li {
 
     .nav-toggle-label {
         display: none;
+    }
+
+    #nav-logo {
+        display: block;
+    }
+
+    #nav-logo img {
+        max-width: 150px;
     }
 
     .manifestation_container {
