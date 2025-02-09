@@ -10,20 +10,21 @@ import itertools
 
 class Manifestation(models.Model):
     STYLE_CHOICES = [
-        ('moon', 'Moon'),
-        ('neutral', 'Neutral'),
-        ('nature', 'Nature'),
-        ('sun', 'Sun'),
-        ('stars', 'Stars'),
-        ('cosmic', 'Cosmic'),
-        ('witchy', 'Witchy'),
-        ('hearts', 'Hearts'),
-        ('antique', 'Antique'),
-        ('pastel', 'Pastel'),
+        ("moon", "Moon"),
+        ("neutral", "Neutral"),
+        ("nature", "Nature"),
+        ("sun", "Sun"),
+        ("stars", "Stars"),
+        ("cosmic", "Cosmic"),
+        ("witchy", "Witchy"),
+        ("hearts", "Hearts"),
+        ("antique", "Antique"),
+        ("pastel", "Pastel"),
     ]
 
     owner = models.ForeignKey(
-        CustomUser, on_delete=models.CASCADE, null=True, blank=True)
+        CustomUser, on_delete=models.CASCADE, null=True, blank=True
+    )
     title = models.CharField(max_length=100)
     description = models.TextField(max_length=500)
     style_choice = models.CharField(max_length=10, choices=STYLE_CHOICES)
@@ -54,7 +55,7 @@ class Manifestation(models.Model):
             for i in itertools.count(1):
                 if not Manifestation.objects.filter(slug=self.slug).exists():
                     break
-                self.slug = f'{original_slug}-{i}'
+                self.slug = f"{original_slug}-{i}"
         super().save(*args, **kwargs)
 
     def next_charge_time(self):

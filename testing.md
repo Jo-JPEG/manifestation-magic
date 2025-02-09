@@ -90,7 +90,6 @@
 - ![PEP8 screenshot](static/manifest/images/manifest-forms.pyPEP8.png)
 - account/models.py
 - ![PEP8 screenshot](static/manifest/images/account-models.pyPEP8.png)
-- Lines 1 and 17 were considered too long by PEP8. These lines cannot be shortened in a way that improves readability. Even though error exists, the app still functions. 
 - manifest/models.py
 - ![PEP8 screenshot](static/manifest/images/manifest-models.pyPEP8.png)
 - settings.py
