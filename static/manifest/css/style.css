@@ -244,15 +244,27 @@ a:hover {
 .steps {
     display: flex;
     flex-direction: column;
-    text-align: right;
+    justify-content: flex-end;
     padding: 10px;
 }
 
-.steps-display {
-    border: 1px solid var(--outer-space);
+.step {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px var(--outer-space);
+    max-width: 500px;
 }
 
-.step {
+.tips {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.tip {
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
@@ -603,5 +615,39 @@ form li {
 
     .brand {
         font-size: 200%;
+    }
+
+    .steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .step {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 3px 3px var(--outer-space);
+        max-width: 500px;
+    }
+    
+    .tips {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .tip {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 3px 3px var(--outer-space);
+        max-width: 500px;
     }
 }
