@@ -183,25 +183,24 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 ### Languages Used
 
-- HTML
-- CSS
-- Python
-- Django
+- HTML was used to create the frontend pages.
+- CSS was used to style the frontend site.
+- Python and Django were used to build the backend framework.
+- GitHub was used to host the repository and for version control.
+- Heroku was used as a platform to host the deployed site.
 
 
 ### Frameworks, Libraries & Programs Used
 
-Add any frameworks, libraries or programs used while creating your project.
-
 - [Microsoft Copilot](https://copilot.microsoft.com/) was used (See AI Implementation and Orchestration)
-- [FireAlpaca](https://firealpaca.com/) for creating custom images 
+- [FireAlpaca](https://firealpaca.com/) was used for creating the custom logo and editing other images for use on the site.
 - [dbdiagram.io ](https://dbdiagram.io/)
 - [Google Fonts](https://fonts.google.com/)
 - [Favicon.cc](https://www.favicon.cc/)
 - [coolors](https://coolors.co/)
 - [Balsamiq](https://balsamiq.com/) was used for initial wireframe creation.
 
-## AI Implementation an d Orchestration
+## AI Implementation and Orchestration
 
 ### Use Cases and Reflections:
 (Highlight how prompts, such as reverse, question-and-answer or multi-step, were used to support learners with SEND or ALN where relevant.)
@@ -227,11 +226,36 @@ Add any frameworks, libraries or programs used while creating your project.
 
 ### Deployment
 
-- **Platform:** [Platform used, e.g., Heroku, AWS, etc.]
-- **High-Level Deployment Steps:** 
-  1. [Step 1]
-  2. [Step 2]
-  3. [Step 3]
+- **Platform:** 
+- The website was deployed to Heroku and can be found [here](https://manifestation-magic-d55b183502af.herokuapp.com/).
+### Heroku
+* Heroku is a cloud platform that lets developers create, deploy, monitor and manage apps.
+- You will need a Heroku account to be able to deploy a website to Heroku.
+
+ **High-Level Deployment Steps:** 
+1. Click 'New' > 'Create new app'
+2. Choose a unique name, choose your region and press 'Create app'
+3. Click on 'Settings' and then 'Reveal Config Vars'
+4. Add a key of 'DISABLE_COLLECTSTATIC' with a value of '1'.
+5. Add a key of 'DATABASE_URL' - the value will be the URL you were emailed when creating your database.
+6. Add a key of 'SECRET_KEY' - the value should be a random secret key.
+7. In your terminal, type the code you will need to install project requirements:
+- pip3 install gunicorn~=20.1
+- pip3 install -r requirements.txt
+- pip3 freeze --local > requirements.txt
+8. Create an 'env.py' file at the root directory which contains the following:
+    - import os
+    - os.environ["DATABASE_URL"]='CI database URL'
+    - os.environ["SECRET_KEY"]=" Your secret key"
+9. Create a file at the root directory called Procfile. In this file enter: "web: gunicorn my_project.wsgi" (without the quotes)
+10. In settings.py, set DEBUG to False. (Always set debug to false before deploying for security)
+11. Add ",'.herokuapp.com' " (without the double quotes) to the ALLOWED_HOSTS list in settings.py
+12. Add, commit and push your code.
+13. Go back to Heroku, click on the 'Deploy' tab.
+14. Connect your project to GitHub.
+15. Scroll to the bottom and click 'Deploy Branch'.
+
+
 - **Verification and Validation:**
   - Steps taken to verify the deployed version matches the development version in functionality.
   - [Include any additional checks to ensure accessibility of the deployed application.]
