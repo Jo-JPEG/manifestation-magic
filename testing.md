@@ -107,7 +107,7 @@
 - ![PEP8 screenshot](static/manifest/images/manifest-views.pyPEP8.png)
 - Lines 119 was considered too long by PEP8. These line cannot be shortened in a way that improves readability as it is a massage string. Even though error exists, the app still functions. 
 - wsgi.py
-- ![PEP8 screenshot]()
+- ![PEP8 screenshot](static/manifest/images/wsgi.pyPEP8.png)
 
 ### Lighthouse
 #### Home
