@@ -44,9 +44,6 @@ INSTALLED_APPS = [
     'account',
     'django.contrib.admin',
     'manifest',
-    
-
-
 ]
 
 MIDDLEWARE = [

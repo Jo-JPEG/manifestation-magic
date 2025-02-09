@@ -94,11 +94,13 @@
 - manifest/models.py
 - ![PEP8 screenshot](static/manifest/images/manifest-models.pyPEP8.png)
 - settings.py
-- ![PEP8 screenshot]()
+- ![PEP8 screenshot](static/manifest/images/setting.pyPEP8.png)
+- Lines 104, 107, 110, and 113 were considered too long by PEP8. These lines cannot be shortened in a way that improves readability. Even though error exists, the app still functions. 
 - pixelwitch/urls.py
-- ![PEP8 screenshot]()
+- ![PEP8 screenshot](static/manifest/images/pixelwitch-urls.pyPEP8.png)
 - manifest/urls.py
-- ![PEP8 screenshot]()
+- ![PEP8 screenshot](static/manifest/images/manifest-urls.pyPEP8.png)
+- Lines 11, 12, 13, 14, 15, and 30 were considered too long by PEP8. These lines cannot be shortened in a way that improves readability. Even though error exists, the app still functions. 
 - account/urls.py
 - ![PEP8 screenshot]()
 - views.py

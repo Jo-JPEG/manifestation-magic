@@ -14,8 +14,15 @@ urlpatterns = [
     path('public-manifestations/', views.public_manifestations, name='public_manifestations'),
     path('manifestation/charge/<slug:slug>/', views.charge_manifestation, name='charge_manifestation'),
     path('profile/', views.profile, name='profile'),
-    path('change-password/', auth_views.PasswordChangeView.as_view(template_name="manifest/change_password.html", success_url='/success/'), name='change_password'),
-    path('success/', views.success, name='success'),  # Add this line
+    path(
+        'change-password/',
+        auth_views.PasswordChangeView.as_view(
+            template_name="manifest/change_password.html",
+            success_url='/success/'
+        ),
+        name='change_password'
+    ),
+    path('success/', views.success, name='success'),
     path('delete_account/', views.delete_account, name='delete_account'),
 ]
 
