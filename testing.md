@@ -80,9 +80,13 @@
 - The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the Python files.
 - admin.py
 - ![PEP8 screenshot](static/manifest/images/admin.pyPEP8.png)
-- apps.py
-- ![PEP8 screenshot]()
-- forms.py
+- account/apps.py
+- ![PEP8 screenshot](static/manifest/images/apps.pyPEP8.png)
+- manifest/apps.py
+- ![PEP8 screenshot](static/manifest/images/manifest-apps.pyPEP8.png)
+- account/forms.py
+- ![PEP8 screenshot](static/manifest/images/accout-forms.pyPEP8.png)
+- manifest/forms.py
 - ![PEP8 screenshot]()
 - models.py
 - ![PEP8 screenshot]()
