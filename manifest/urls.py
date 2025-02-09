@@ -5,26 +5,48 @@ from django.contrib.auth import views as auth_views
 from . import views
 
 urlpatterns = [
-    path('', views.home, name='home'),
-    path('about/', views.about, name='about'),
-    path('create/', views.create_manifestation, name='create_manifestation'),
-    path('manifestation/<slug:slug>/', views.view_manifestation, name='view_manifestation'),
-    path('manifestation/edit/<slug:slug>/', views.edit_manifestation, name='edit_manifestation'),
-    path('manifestation/delete/<slug:slug>/', views.delete_manifestation, name='delete_manifestation'),
-    path('public-manifestations/', views.public_manifestations, name='public_manifestations'),
-    path('manifestation/charge/<slug:slug>/', views.charge_manifestation, name='charge_manifestation'),
-    path('profile/', views.profile, name='profile'),
+    path("", views.home, name="home"),
+    path("about/", views.about, name="about"),
+    path("create/", views.create_manifestation, name="create_manifestation"),
     path(
-        'change-password/',
+        "manifestation/<slug:slug>/",
+        views.view_manifestation,
+        name="view_manifestation",
+    ),
+    path(
+        "manifestation/edit/<slug:slug>/",
+        views.edit_manifestation,
+        name="edit_manifestation",
+    ),
+    path(
+        "manifestation/delete/<slug:slug>/",
+        views.delete_manifestation,
+        name="delete_manifestation",
+    ),
+    path(
+        "public-manifestations/",
+        views.public_manifestations,
+        name="public_manifestations",
+    ),
+    path(
+        "manifestation/charge/<slug:slug>/",
+        views.charge_manifestation,
+        name="charge_manifestation",
+    ),
+    path("profile/", views.profile, name="profile"),
+    path(
+        "change-password/",
         auth_views.PasswordChangeView.as_view(
             template_name="manifest/change_password.html",
-            success_url='/success/'
+            success_url="/success/",
         ),
-        name='change_password'
+        name="change_password",
     ),
-    path('success/', views.success, name='success'),
-    path('delete_account/', views.delete_account, name='delete_account'),
+    path("success/", views.success, name="success"),
+    path("delete_account/", views.delete_account, name="delete_account"),
 ]
 
 if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(
+        settings.STATIC_URL, document_root=settings.STATIC_ROOT
+    )
