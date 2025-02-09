@@ -132,10 +132,6 @@ h1, h2, h3 {
     font-family: var(--secondary-font);
 }
 
-.title {
-    font-family: var(--brand-font);
-}
-
 p {
     font-size: 16px;
     line-height: 1.5;
@@ -198,8 +194,6 @@ a:hover {
     min-width: 100%;
     display: flex;
     justify-content: flex-end;
-    
-
 }
 
 .info-container i {
@@ -213,7 +207,6 @@ a:hover {
     align-items: center;
     padding: 10px;
     margin: 10px;
-    
 }
 
 .manifestation-list {
@@ -222,7 +215,6 @@ a:hover {
     list-style-type: none;
     font-size: 180%;
     color: var(--text-color-dark);
-
 }
 
 .manifestation-list a {
@@ -323,7 +315,6 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
@@ -336,14 +327,14 @@ input[type=email] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-  }
+}
 
 input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-  }
+}
 
 label {
     font-size: 2rem;

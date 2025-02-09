@@ -134,7 +134,7 @@ Add the images or links for your wireframes here.
 
 Users complete a form to create their own manifestation. This includes a title, description, style choice and if they wish to make the manifestation public. 
 
-#### View Manifestation 
+#### View Manifestation
 
 Each manifestation has a unique URL slug allowing users to view their manifestation. They also have a choice of styles which vary the manifestation's aethetics. 
 
@@ -185,7 +185,7 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 - HTML
 - CSS
--  
+- Python
 - Django
 
 
@@ -193,7 +193,7 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 Add any frameworks, libraries or programs used while creating your project.
 
-- Microsoft Copilot was used (See AI Implementation and Orchestration)
+- [Microsoft Copilot](https://copilot.microsoft.com/) was used (See AI Implementation and Orchestration)
 - [FireAlpaca](https://firealpaca.com/) for creating custom images 
 - [dbdiagram.io ](https://dbdiagram.io/)
 - [Google Fonts](https://fonts.google.com/)
@@ -201,7 +201,7 @@ Add any frameworks, libraries or programs used while creating your project.
 - [coolors](https://coolors.co/)
 - [Balsamiq](https://balsamiq.com/) was used for initial wireframe creation.
 
-## AI Implementation and Orchestration
+## AI Implementation an d Orchestration
 
 ### Use Cases and Reflections:
 (Highlight how prompts, such as reverse, question-and-answer or multi-step, were used to support learners with SEND or ALN where relevant.)
