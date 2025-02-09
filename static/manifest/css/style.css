@@ -232,6 +232,34 @@ a:hover {
     font-size: 60%;
 }
 
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 10px;
+}
+
+.steps-display {
+    border: 1px solid var(--outer-space);
+}
+
+.step {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px var(--outer-space);
+    max-width: 500px;
+}
+
 .public-list {
     padding: 5px;
     margin: 5px;
