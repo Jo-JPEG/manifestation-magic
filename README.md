@@ -253,6 +253,8 @@ Place instructions on how to clone your project here.
 
 ## Testing
 
+- Please see [testing.md](testing.md) file for full testing documentation.
+
 - **Manual Testing:**
   - **Devices and Browsers Tested:** [List devices and browsers, ensuring testing was conducted with assistive technologies such as screen readers or keyboard-only navigation.]
   - **Features Tested:** [Summarise features tested manually, e.g., CRUD operations, navigation.]
@@ -262,13 +264,9 @@ Place instructions on how to clone your project here.
   - Features Covered: [Briefly list features covered by automated tests.]
   - Adjustments Made: [Describe any manual corrections to AI-generated test cases, particularly for accessibility.]
 
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
+
 
 ## Credits
-
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
-
-The Credits section is where you can credit all the people and sources you used throughout your project.
 
 ### Code Used
 
