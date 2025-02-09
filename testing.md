@@ -102,8 +102,10 @@
 - ![PEP8 screenshot](static/manifest/images/manifest-urls.pyPEP8.png)
 - Lines 11, 12, 13, 14, 15, and 30 were considered too long by PEP8. These lines cannot be shortened in a way that improves readability. Even though error exists, the app still functions. 
 - account/urls.py
-- ![PEP8 screenshot]()
-- views.py
+- ![PEP8 screenshot](static/manifest/images/account-urls.pyPEP8.png)
+- account/views.py
+- ![PEP8 screenshot](static/manifest/images/account-views.pyPEP8.png)
+- manifest/views.py
 - ![PEP8 screenshot]()
 - wsgi.py
 - ![PEP8 screenshot]()

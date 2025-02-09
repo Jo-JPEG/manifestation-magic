@@ -12,7 +12,9 @@ from django.contrib.auth import get_user_model
 @login_required
 def home(request):
     manifestations = Manifestation.objects.filter(
-owner=request.user).order_by('created_on')
+        owner=request.user
+    ).order_by('created_on')
+
     for manifestation in manifestations:
         if manifestation.is_charged and timezone.now() > manifestation.last_charged + timedelta(hours=24):
             manifestation.is_charged = False
@@ -43,12 +45,13 @@ def create_manifestation(request):
             return redirect('view_manifestation', slug=manifestation.slug)
     else:
         form = ManifestationForm()
-    return render(request, 'manifest/create_manifestation.html', {'form': form})
+    return render(
+        request, 'manifest/create_manifestation.html', {'form': form})
 
 
 def view_manifestation(request, slug):
     manifestation = get_object_or_404(Manifestation, slug=slug)
-    
+
     if manifestation.owner != request.user and not (manifestation.is_public and manifestation.is_approved):
         return render(request, 'manifest/forbidden.html')
 
@@ -62,7 +65,8 @@ def view_manifestation(request, slug):
         'manifestation': manifestation,
         'next_charge_time': manifestation.next_charge_time()
     }
-    return render(request, 'manifest/view_manifestation.html', {'manifestation': manifestation})
+    return render(
+        request, 'manifest/view_manifestation.html', {'manifestation': manifestation})
 
 
 @login_required
@@ -74,7 +78,8 @@ def charge_manifestation(request, slug):
         manifestation.last_charged = timezone.now()
         manifestation.save()
         return redirect('view_manifestation', slug=manifestation.slug)
-    return render(request, 'manifest/view_manifestation.html', {'manifestation': manifestation})
+    return render(
+        request, 'manifest/view_manifestation.html', {'manifestation': manifestation})
 
 
 @login_required
@@ -85,7 +90,8 @@ def edit_manifestation(request, slug):
         if form.is_valid():
             manifestation.is_approved = False  # Set is_approved to False
             form.save()
-            messages.add_message(request, messages.SUCCESS, 'Your manifestation has been updated successfully. If it is set to public, it will be reviewed by an admin.')
+            messages.add_message(
+                request, messages.SUCCESS, 'Your manifestation has been updated successfully. If it is set to public, it will be reviewed by an admin.')
             return redirect('view_manifestation', slug=manifestation.slug)
     else:
         form = ManifestationForm(instance=manifestation)
@@ -97,7 +103,8 @@ def delete_manifestation(request, slug):
     manifestation = get_object_or_404(Manifestation, slug=slug)
     if request.method == 'POST':
         manifestation.delete()
-        messages.add_message(request, messages.SUCCESS, 'Your manifestation has been deleted successfully.')
+        messages.add_message(
+            request, messages.SUCCESS, 'Your manifestation has been deleted successfully.')
         return redirect('home')  # Redirect to a different view after deletion
     return render(request, 'manifest/delete_manifestation.html', {'manifestation': manifestation})
 
