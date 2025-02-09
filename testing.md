@@ -105,13 +105,13 @@
 - ![PEP8 screenshot](static/manifest/images/account-views.pyPEP8.png)
 - manifest/views.py
 - ![PEP8 screenshot](static/manifest/images/manifest-views.pyPEP8.png)
-- Lines 119 was considered too long by PEP8. These line cannot be shortened in a way that improves readability as it is a massage string. Even though error exists, the app still functions. 
+- Lines 119 was considered too long by PEP8. These line cannot be shortened in a way that improves readability as it is a message string. Even though error exists, the app still functions. 
 - wsgi.py
 - ![PEP8 screenshot](static/manifest/images/wsgi.pyPEP8.png)
 
 ### Lighthouse
 #### Home
-- ![Lighthouse screenshot for home page]()
+- ![Lighthouse screenshot for home page](static/)
 
 #### Register
 - ![Lighthouse screenshot for register page]()
