@@ -133,6 +133,7 @@ footer {
 
 h1, h2, h3 {
     font-family: var(--secondary-font);
+    font-size: 2rem;
 }
 
 p {
