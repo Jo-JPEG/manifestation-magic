@@ -338,8 +338,8 @@ Cloning this repository will create a local copy on your computer.
 
 ### Code Used
 
-- [Code Institute's](https://learn.codeinstitute.net/) Love Running walkthrough for the Navbar toggle code.
-- [Code Institute's](https://learn.codeinstitute.net/) I think Therefore I Blog walkthrough was uses as a reference during all stages of this project.
+- I refered to [Code Institute's](https://learn.codeinstitute.net/) Love Running walkthrough for the Navbar toggle code.
+- [Code Institute's](https://learn.codeinstitute.net/) I think Therefore I Blog walkthrough was used as a reference during all stages of this project.
 
 ### Content
 
