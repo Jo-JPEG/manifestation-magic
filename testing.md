@@ -78,8 +78,10 @@
 
 ### Python
 - The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the Python files.
-- admin.py
+- account/admin.py
 - ![PEP8 screenshot](static/manifest/images/admin.pyPEP8.png)
+- manifest/admin.py
+- ![PEP8 screenshot](static/manifest/images/manifest-admin.pyPEP8.png)
 - account/apps.py
 - ![PEP8 screenshot](static/manifest/images/apps.pyPEP8.png)
 - manifest/apps.py
@@ -94,7 +96,7 @@
 - ![PEP8 screenshot](static/manifest/images/manifest-models.pyPEP8.png)
 - settings.py
 - ![PEP8 screenshot](static/manifest/images/setting.pyPEP8.png)
-- Lines 104, 107, 110, and 113 were considered too long by PEP8. These lines cannot be shortened in a way that improves readability. Even though error exists, the app still functions. 
+- Lines 104, 107, 110, and 113 were considered too long by PEP8. These lines cannot be shortened in a way that improves readability. Even though it shows an error, the app still functions. 
 - pixelwitch/urls.py
 - ![PEP8 screenshot](static/manifest/images/pixelwitch-urls.pyPEP8.png)
 - manifest/urls.py
