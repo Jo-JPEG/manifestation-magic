@@ -164,7 +164,14 @@
 
 ## Responsiveness
 
-The deployed site was tested for responsiveness accross various devices.
+-The deployed site was tested for responsiveness accross various devices.
+
+#### Mobile 
+
+-Moto g(8) Power was used for screenshots.
+- ![Mobile responsiveness screenshot- home](static/manifest/images/mobile-home.png)
+- ![Mobile responsiveness screenshot- login](static/manifest/images/mobile-login.png)
+- ![Mobile responsiveness screenshot- about](static/manifest/images/mobile-about.png)
 
 #### Login
 - ![Responsiveness screenshot- home](static/manifest/images/responsive-login.png)
@@ -181,7 +188,7 @@ The deployed site was tested for responsiveness accross various devices.
 ## Browsers
 - I use Google Chrome as my browser so all screenshots above are from Google Chrome.
 - The site was tested on Microsoft Edge:
-- ![Microsoft Edge screenshot]()
+- ![Microsoft Edge screenshot](static/manifest/images/edge-screenshot.png)
 - The site was tested on Opera:
 - ![Opera screrenshot]()
 
