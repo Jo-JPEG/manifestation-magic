@@ -18,6 +18,8 @@ View the live site here [Manifestation Magic](https://manifestation-magic-d55b18
 * [User Experience](#user-experience-ux)
   * [User Stories](#user-stories)
 
+* [Agile](#agile)
+
 * [Design](#design)
   * [Colour Scheme](#colour-scheme)
   * [Typography](#typography)
@@ -95,6 +97,15 @@ View the live site here [Manifestation Magic](https://manifestation-magic-d55b18
 - As an infrequent user, I want to receive email reminders to recharge my manifestations so that I can remember to engage with the site.
 - As a user, I want to view my recharge history so that I can see how frequently I have engaged with my goals.
 
+## Agile
+
+This project used Agile methodology to prioritize project requirements, tasks, and features. 
+A [GitHub Project board](https://github.com/users/Jo-JPEG/projects/11) was used in the project management.
+User stories were separated into 4 catagories:
+- Must have: These are the non-negotiable requirements that are essential for the project to be considered successful. Without these features, the project would fail or be deemed incomplete.
+- Should have: These are important requirements that are not critical for the project's success but would add significant value. While the project could still function without them, their inclusion would enhance the overall experience.
+- Could have: These are desirable requirements that would be nice to have but are not essential. They can be included if time and resources permit, but they are not a priority.
+- Won't have (this time): These are requirements that will not be included in the current project scope. They may be considered for future iterations or phases but are not necessary for the current project.
 
 ## Design
 
@@ -216,21 +227,22 @@ Fonts were chosen to be dyslexia friendly and provide contrast to  headings.
 ### Use Cases and Reflections:
 (Highlight how prompts, such as reverse, question-and-answer or multi-step, were used to support learners with SEND or ALN where relevant.)
 
-  - **Code Creation:** 
-    - Reflection: Strategic use of AI allowed for rapid prototyping, with minor adjustments for alignment with project goals. 
-    - Examples: Reverse prompts for alternative code solutions and question-answer prompts for resolving specific challenges.
-  - **Debugging:** 
-    - Reflection: Key interventions included resolving logic errors and enhancing maintainability, with a focus on simplifying complex logic to make it accessible.
-  - **Performance and UX Optimization:** 
-    - Reflection: Minimal manual adjustments were needed to apply AI-driven improvements, which enhanced application speed and user experience for all users.
-  - **Automated Unit Testing:**
-    - Reflection: Adjustments were made to improve test coverage and ensure alignment with functionality. Prompts were used to generate inclusive test cases that considered edge cases for accessibility.
+#### Code Creation:
+- Reflection: Strategic use of AI allowed for rapid prototyping, with minor adjustments for alignment with project goals. 
+- Examples: Reverse prompts for alternative code solutions and question-answer prompts for resolving specific challenges.
 
-- **Overall Impact:**
-  - AI tools streamlined repetitive tasks, enabling focus on high-level development.
-  - Efficiency gains included faster debugging, comprehensive testing, and improved code quality.
-  - Challenges included contextual adjustments to AI-generated outputs, which were resolved effectively, enhancing inclusivity.
-  - Copilot did remove a vital piece of code while changing the id to slugs. 
+#### Debugging:
+- Reflection: Key interventions included resolving logic errors and enhancing maintainability, with a focus on simplifying complex logic to make it accessible.
+
+#### Performance and UX Optimization:
+- Reflection: Minimal manual adjustments were needed to apply AI-driven improvements, which enhanced application speed and user experience for all users.
+
+
+### Overall Impact:
+- AI tools , enabling focus on high-level development.
+- Efficiency gains included .
+- Challenges included .
+- Copilot did remove a vital piece of code while changing the id to slugs.
 
 
 ## Deployment & Local Development
@@ -244,22 +256,22 @@ Fonts were chosen to be dyslexia friendly and provide contrast to  headings.
 - You will need a Heroku account to be able to deploy a website to Heroku.
 
  **High-Level Deployment Steps:** 
-1. From your Heroku dashboard, click 'New' > 'Create new app'
+1. From the Heroku dashboard, click 'New' > 'Create new app'
 2. Choose a unique name, choose the closest region, and press 'Create app'
 3. Navigate to 'Settings' and then click 'Reveal Config Vars'
 4. Add a key of 'DISABLE_COLLECTSTATIC' with a value of '1'.
 5. Add a key of 'DATABASE_URL' - this value will be the URL for your database.
 6. Add a key of 'SECRET_KEY' - the value should be a random secret key.
-7. In your terminal, type the code you will need to install project requirements:
+7. In your terminal, enter the following commands to install project requirements:
 - `pip3 install gunicorn~=20.1`
 - `pip3 install -r requirements.txt`
 - `pip3 freeze --local > requirements.txt`
-8. Create an `env.py` file at the root directory which contains the following:
+8. Create a file named `env.py` in the root directory, containing the following:
     - import os
     - os.environ["DATABASE_URL"]='Your database URL'
     - os.environ["SECRET_KEY"]="Your secret key"
 9. Create a file at the root directory called Procfile. In this file enter: "web: gunicorn my_project.wsgi" (without the quotes)
-10. In settings.py, set DEBUG to False. (Always set debug to false before deploying for security)
+10. In settings.py, ensure DEBUG is set to `False`. (Always set debug to false before deploying for security)
 11. Add ",'.herokuapp.com' " (without the double quotes) to the ALLOWED_HOSTS list in settings.py
 12. Add, commit and push your code.
 13. On Heroku, click on the 'Deploy' tab.
