@@ -321,19 +321,16 @@ Cloning this repository will create a local copy on your computer.
 ### Manual Testing:
 
 #### Devices and Browsers Tested: 
-- Browsers tested 
-- Devices
-- Keyboard navigation
+- The site was tested on Chrome, Microsoft Edge, and Opera browsers.
+- Various devices were used during testing. Including mobile (Moto G power), laptop and desktop computer. 
+- Keyboard navigation was tested to ensure site can be navigated fully without mouse inputs.
 #### Features Tested:
-Summarise features tested manually, e.g., CRUD operations, navigation.
 - User account creation, login, password edit, logout and account deletion.
 - Manifestation creation, view, edit and deletion.
-- 
-
+- User navigation was tested to ensure working links throughout.
 #### Results:
-
--All critical features work as expected, including accessibility checks, HTML validation, CSS validation, and Lighthouse performance.
-
+- All critical features work as expected, including accessibility checks, HTML validation, CSS validation, and Lighthouse performance.
+- See [testing.md](testing.md)
 
 ## Credits
 

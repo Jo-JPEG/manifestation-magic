@@ -190,7 +190,7 @@
 - The site was tested on Microsoft Edge:
 - ![Microsoft Edge screenshot](static/manifest/images/edge-screenshot.png)
 - The site was tested on Opera:
-- ![Opera screrenshot]()
+- ![Opera screrenshot](static/manifest/images/opera-screenshot.png)
 
 ## Bugs
 - Add bugs here
