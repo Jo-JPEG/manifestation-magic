@@ -130,6 +130,11 @@ Use this section to explain what sort of imagery you plan to use through your si
  
  - ![Mobile View Wireframes](static/manifest/images/mobile-wireframe.png)
 
+ - ![Desktop Home Wireframe](static/manifest/images/desktop-home.png)
+ - ![Desktop Logged-in Home Wireframe](static/manifest/images/desktop-home-logged-in.png)
+ - ![Desktop About Wireframe](static/manifest/images/desktop-about.png)
+ - ![Desktop View Manifestation Wireframe](static/manifest/images/desktop-view-manifestation.png)
+
 ## Features
 
 ### Main features
