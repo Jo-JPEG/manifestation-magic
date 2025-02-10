@@ -3,6 +3,7 @@
 ## Manual Testing
 
 - Manual testing was carried out on the local and deployed sites.
+- The following features were tested during development on both the local and fully deployed site.
 
 |        Location       |           Feature          |                                                                                                           Expected Outcome                                                                                                          | Pass/Fail |                                                                    Notes                                                                   |
 |:---------------------:|:--------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------:|:------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -44,10 +45,6 @@
 | Delete_account        | Delete user account        | On click, deletes user account, returns user to homepage and displays message, 'Your account has been deleted successfully.'                                                                                                        | PASS      |                                                                                                                                            |
 | Delete_account        | "Cancel" button            | Returns user to profile view on click.                                                                                                                                                                                              | PASS      |                                                                                                                                            |
 
-- **Manual Testing:**
-  - **Devices and Browsers Tested:** [List devices and browsers, ensuring testing was conducted with assistive technologies such as screen readers or keyboard-only navigation.]
-  - **Features Tested:** [Summarise features tested manually, e.g., CRUD operations, navigation.]
-  - **Results:** [Summarise testing results, e.g., "All critical features worked as expected, including accessibility checks."]
 
 
 ## Code validators
@@ -130,18 +127,34 @@
 
 ### Lighthouse
 #### Home
-- ![Lighthouse screenshot for home page](static/)
+- ![Lighthouse screenshot for home page](static/manifest/images/lighthouse-home.png)
 
-#### Register
-- ![Lighthouse screenshot for register page]()
+#### Signup
+- ![Lighthouse screenshot for signup page](static/manifest/images/lighthouse-signup.png)
 
 #### Login
-- ![Lighthouse screenshot for login page]()
+- ![Lighthouse screenshot for login page](static/manifest/images/lighthouse-login.png)
 
-#### Logout
-- ![Lighthouse screenshot for logout page]()
+#### About
+- ![Lighthouse screenshot for about page](static/manifest/images/lighthouse-about.png)
 
+#### Shared
+- ![Lighthouse screenshot for shared page](static/manifest/images/lighthouse-shared.png)
 
+#### Profile
+- ![Lighthouse screenshot for profile page](static/manifest/images/lighthouse-profile.png)
+
+#### View Manifestation (Pastel Styling)
+- ![Lighthouse screenshot for pastel page](static/manifest/images/lighthouse-view-manifestation-pastel.png)
+
+#### View Manifestation (Witchy Style)
+- ![Lighthouse screenshot for witchy page](static/manifest/images/lighthouse-view-manifestation-witchy.png)
+
+#### Edit Manifestation
+- ![Lighthouse screenshot for edit manifstation page](static/manifest/images/lighthouse-edit-manifestation.png)
+
+#### Delete Manifestation
+- ![Lighthouse screenshot for delete manifstation page](static/manifest/images/lighthouse-delete-manifestation.png)
 
 
 #### Future improvements based on Lighthouse
