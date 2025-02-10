@@ -1,5 +1,4 @@
 /* css variables  */
-
 :root {
     --primary-font: 'Figtree', sans-serif;
     --secondary-font: 'Caveat', serif;
@@ -516,7 +515,7 @@ form li {
 }
 
 
-
+/* media queries */
 @media only screen and (min-width: 600px) {
 
     header {
