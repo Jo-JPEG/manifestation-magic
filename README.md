@@ -139,7 +139,7 @@ Use this section to explain what sort of imagery you plan to use through your si
 
 ### Main features
 
-### Custom User accounts
+#### Custom User accounts
 
 Users can register, log-in, log-out, edit their passwords and delete their accounts through front-end forms. 
 
@@ -196,12 +196,13 @@ Fonts were chosen to be dyslexia friendly and provide contrast to  headings.
 - HTML was used to create the frontend pages.
 - CSS was used to style the frontend site.
 - Python and Django were used to build the backend framework.
-- GitHub was used to host the repository and for version control.
-- Heroku was used as a platform to host the deployed site.
+- 
 
 
 ### Frameworks, Libraries & Programs Used
 
+- GitHub was used to host the repository and for version control.
+- Heroku was used as a platform to host the deployed site.
 - [Microsoft Copilot](https://copilot.microsoft.com/) was used (See AI Implementation and Orchestration)
 - [FireAlpaca](https://firealpaca.com/) was used for creating the custom logo and editing other images for use on the site.
 - [dbdiagram.io ](https://dbdiagram.io/) was used to create a database model.
@@ -243,27 +244,27 @@ Fonts were chosen to be dyslexia friendly and provide contrast to  headings.
 - You will need a Heroku account to be able to deploy a website to Heroku.
 
  **High-Level Deployment Steps:** 
-1. Click 'New' > 'Create new app'
-2. Choose a unique name, choose your region and press 'Create app'
-3. Click on 'Settings' and then 'Reveal Config Vars'
+1. From your Heroku dashboard, click 'New' > 'Create new app'
+2. Choose a unique name, choose the closest region, and press 'Create app'
+3. Navigate to 'Settings' and then click 'Reveal Config Vars'
 4. Add a key of 'DISABLE_COLLECTSTATIC' with a value of '1'.
-5. Add a key of 'DATABASE_URL' - the value will be the URL you were emailed when creating your database.
+5. Add a key of 'DATABASE_URL' - this value will be the URL for your database.
 6. Add a key of 'SECRET_KEY' - the value should be a random secret key.
 7. In your terminal, type the code you will need to install project requirements:
-- pip3 install gunicorn~=20.1
-- pip3 install -r requirements.txt
-- pip3 freeze --local > requirements.txt
-8. Create an 'env.py' file at the root directory which contains the following:
+- `pip3 install gunicorn~=20.1`
+- `pip3 install -r requirements.txt`
+- `pip3 freeze --local > requirements.txt`
+8. Create an `env.py` file at the root directory which contains the following:
     - import os
-    - os.environ["DATABASE_URL"]='CI database URL'
-    - os.environ["SECRET_KEY"]=" Your secret key"
+    - os.environ["DATABASE_URL"]='Your database URL'
+    - os.environ["SECRET_KEY"]="Your secret key"
 9. Create a file at the root directory called Procfile. In this file enter: "web: gunicorn my_project.wsgi" (without the quotes)
 10. In settings.py, set DEBUG to False. (Always set debug to false before deploying for security)
 11. Add ",'.herokuapp.com' " (without the double quotes) to the ALLOWED_HOSTS list in settings.py
 12. Add, commit and push your code.
-13. Go back to Heroku, click on the 'Deploy' tab.
+13. On Heroku, click on the 'Deploy' tab.
 14. Connect your project to GitHub.
-15. Scroll to the bottom and click 'Deploy Branch'.
+15. Scroll to 'Manual deploy' and click on, 'Deploy Branch'.
 
 
 - **Verification and Validation:**
@@ -275,15 +276,32 @@ Fonts were chosen to be dyslexia friendly and provide contrast to  headings.
 
 ### Local Development
 
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
-
 #### How to Fork
 
-Place instructions on how to fork your project here.
+A fork is a new repository that shares code and visibility settings with the original “upstream” repository.
+- To fork a GitHub repository:
+1. Login to GitHub and navigate to the repository you want to fork.
+2. Click the "Fork" button (found above the Settings button).
+3. This creates a copy of the original repository in your GitHub account.
+
+*Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
+
+- Run the server: `python3 manage.py runserver`
+- Stop the app once it's loaded: `CTRL+C` or `⌘+C`
+- Make any necessary migrations: `python3 manage.py makemigrations`
+- Migrate the data to the database: `python3 manage.py migrate`
+- Create a superuser: `python3 manage.py createsuperuser`
+
 
 #### How to Clone
 
-Place instructions on how to clone your project here.
+Cloning this repository will create a local copy on your computer.
+
+- Access the repository: Go to the GitHub repository you want to clone on the GitHub website. 
+- Copy the URL: Click on the "Code" button and copy the HTTPS URL provided. 
+- Open your terminal: Open a terminal window on your computer. 
+- Run the clone command: `git clone <repository-url>` 
+- You can also clone a repository using the GitHub Desktop application by selecting the repository and clicking "Clone". 
 
 ## Testing
 
@@ -309,6 +327,9 @@ If you have used some code in your project that you didn't write, this is the pl
  
 Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
 
+- [pixabay.com](https://pixabay.com/) was used to source additional images.
+- [User GDJ on Pixabay](https://pixabay.com/users/gdj-1086657/) has uploaded a wide selection of images which were edited and used as background images for several style choices.
+
 ###  Media
 
 - [Google Fonts](https://fonts.google.com/)
@@ -316,6 +337,7 @@ Who wrote the content for the website? Was it yourself - or have you made the si
 - [coolors](https://coolors.co/)
 - [Balsamiq](https://balsamiq.com/)
 - [compress-or-die](https://compress-or-die.com/) was used to convert all images to webp format.
+- [amiresponsive](https://ui.dev/amiresponsive) was used to create images showing the site on different devices.
 
 If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
   
