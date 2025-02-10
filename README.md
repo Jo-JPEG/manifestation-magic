@@ -108,9 +108,13 @@ View the live site here [Manifestation Magic](https://manifestation-magic-d55b18
 
 ### Typography
 
+Three fonts were selected from [Google Fonts](https://fonts.google.com/).
 
+The main font, Figtree "is a clean yet friendly geometric sans serif font for usage in web and mobile apps". It was chosen as it has a simple, personal feel. Figtree is sans serif meaning it is easier for users with dyslexia or autism to read. 
 
-[Google Fonts](https://fonts.google.com/) 
+The secondary font, Caveat, was chosen as it provides a visual distinction from the main font. It is intended to resemble handwriting and gives the site a personal feeling as well as making headings appear distinct. 
+
+The third font, Griffy, is used only to represent the webpage brand, "Manifestation Magic". It has a unique apperance which evokes a feeling of whimsy. This font is used to provide an interesting visual element to the site but is not used for any crucial text.
 
 Why did you choose the font you have?
 Is this an accessibly friendly font?
@@ -191,7 +195,7 @@ Code Institute have an amazing channel for all things accessibility (a11y-access
 
 - [Microsoft Copilot](https://copilot.microsoft.com/) was used (See AI Implementation and Orchestration)
 - [FireAlpaca](https://firealpaca.com/) was used for creating the custom logo and editing other images for use on the site.
-- [dbdiagram.io ](https://dbdiagram.io/)
+- [dbdiagram.io ](https://dbdiagram.io/) was used to create a database model.
 - [Google Fonts](https://fonts.google.com/)
 - [Favicon.cc](https://www.favicon.cc/)
 - [coolors](https://coolors.co/)
