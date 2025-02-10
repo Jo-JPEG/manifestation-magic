@@ -21,27 +21,49 @@
   <body>
     <header>
       <input type="checkbox" id="nav-toggle" name="nav-toggle" />
-      <label for="nav-toggle" class="nav-toggle-label"
-        ><i class="fa-solid fa-bars"></i
-      ></label>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <i class="fa-solid fa-bars"></i>
+      </label>
       <nav>
-        <a href="{% url 'home' %}" id="nav-logo" class="logo"
-          ><img
+        <a href="{% url 'home' %}" id="nav-logo" class="logo">
+          <img
             src="{% static 'manifest/images/logo.webp' %}"
             alt="Manifestation Magic Logo"
-        /></a><span class="brand">Manifestation Magic</span>
+          />
+        </a>
+        <span class="brand">Manifestation Magic</span>
         <ul class="nav-list">
-          <li><a href="{% url 'home' %}">Home</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="{% url 'public_manifestations' %}">Shared</a></li>
+          <li>
+            <a href="{% url 'home' %}" class="{% if request.path == '/' %}active{% endif %}" {% if request.path == '/' %}aria-current="page"{% endif %}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'about' %}" class="{% if request.path == '/about/' %}active{% endif %}" {% if request.path == '/about/' %}aria-current="page"{% endif %}>
+              About
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'public_manifestations' %}" class="{% if request.path == '/public_manifestations/' %}active{% endif %}" {% if request.path == '/public_manifestations/' %}aria-current="page"{% endif %}>
+              Shared
+            </a>
+          </li>
         </ul>
         <ul class="nav-list">
           {% if user.is_authenticated %}
-          <li><a href="{% url 'logout' %}">Logout</a></li>
-          <li><a href="{% url 'profile' %}">Profile</a></li>
+          <li>
+            <a href="{% url 'logout' %}">Logout</a>
+          </li>
+          <li>
+            <a href="{% url 'profile' %}" class="{% if request.path == '/profile/' %}active{% endif %}" {% if request.path == '/profile/' %}aria-current="page"{% endif %}>Profile</a>
+          </li>
           {% else %}
-          <li><a href="{% url 'login' %}">Login</a></li>
-          <li><a href="{% url 'signup' %}">Sign Up</a></li>
+          <li>
+            <a href="{% url 'login' %}">Login</a>
+          </li>
+          <li>
+            <a href="{% url 'signup' %}" class="{% if request.path == '/signup/' %}active{% endif %}" {% if request.path == '/signup/' %}aria-current="page"{% endif %}>Sign Up</a>
+          </li>
           {% endif %}
         </ul>
       </nav>
