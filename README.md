@@ -104,7 +104,11 @@ View the live site here [Manifestation Magic](https://manifestation-magic-d55b18
 
 ### Colour Scheme
 
- [coolors](https://coolors.co/)
+ [coolors](https://coolors.co/) was used to generate a calm, high-contrast colour scheme. 
+
+ -![Main colour scheme](static/manifest/images/colours.png)
+
+ Additional complimentary colours were generated to provide additional customisation options for users. These colours are seen when certain style choices are selected by the user for their manifestation.
 
 ### Typography
 
@@ -115,10 +119,6 @@ The main font, Figtree "is a clean yet friendly geometric sans serif font for us
 The secondary font, Caveat, was chosen as it provides a visual distinction from the main font. It is intended to resemble handwriting and gives the site a personal feeling as well as making headings appear distinct. 
 
 The third font, Griffy, is used only to represent the webpage brand, "Manifestation Magic". It has a unique apperance which evokes a feeling of whimsy. This font is used to provide an interesting visual element to the site but is not used for any crucial text.
-
-Why did you choose the font you have?
-Is this an accessibly friendly font?
-What weights have you included?
 
 ### Imagery
 
@@ -138,6 +138,10 @@ Use this section to explain what sort of imagery you plan to use through your si
 ## Features
 
 ### Main features
+
+### Custom User accounts
+
+Users can register, log-in, log-out, edit their passwords and delete their accounts through front-end forms. 
 
 #### Create Manifestation 
 
@@ -175,15 +179,15 @@ What features would you like to implement in the future on your site? Would you 
 
 ### Accessibility
 
-Be an amazing developer and get used to thinking about accessibility in all of your projects!
+Accessibility was a priority at all stages of developing this project.
 
-This is the place to make a note of anything you have done with accessibility in mind. Some examples include:
+I added aria-labels and text context to all elements.
 
-Have you used icons and added aria-labels to enable screen readers to understand these?
-Have you ensured your site meets the minimum contrast requirements?
-Have you chosen fonts that are dyslexia/accessible friendly?
+The colour scheme was chosen to meet contrast requirements and also avoid using 100% black and white shades, as this is found to be too harsh for many users.
 
-Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
+Fonts were chosen to be dyslexia friendly and provide contrast to  headings.
+
+ 
 
 ## Technologies Used
 
