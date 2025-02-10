@@ -54,18 +54,39 @@
 ### HTML
 - The [W3C Validator](https://validator.w3.org/) was used to validate the HTML.
 #### Home
-- ![Home page validator screenshot]()
-
-#### Logout page
-- ![Logout page validator screenshot]()
+- ![Home page validator screenshot](static/manifest/images/home-HTML.png)
 
 #### Login page
-- ![Login page validator screenshot]()
+- ![Login page validator screenshot](static/manifest/images/login-HTML.png)
 
-#### Register page
-- ![Register page validator screenshot]()
+#### Signup page
+- ![Signup page validator screenshot](static/manifest/images/signup-HTML.png)
+- This page has errors due to Django's embedded HTML that cannot be edited.
 
-- ![Register page validator screenshot code]()
+#### Create Manifestation
+- ![validator screenshot](static/manifest/images/create-manifestation-HTML.png)
+
+#### Edit Manifestation
+- ![validator screenshot](static/manifest/images/edit-manifestation-HTML.png)
+
+#### Delete Manifestation
+- ![validator screenshot](static/manifest/images/delete-manifestation-HTML.png)
+
+#### View Manifestation
+- ![Validator screenshot](static/manifest/images/view-manifestation-HTML.png)
+
+#### Public Manifestations
+- ![Validator screenshot](static/manifest/images/public-manifestations-HTML.png)
+
+#### Profile
+- ![Validator screenshot](static/manifest/images/profile-HTML.png)
+
+#### Delete Account
+- ![Validator screenshot](static/manifest/images/delete-accout-HTML.png)
+
+#### Edit Password
+- ![Validator screenshot](static/manifest/images/edit-password-HTML.png)
+- This page has errors due to Django's embedded HTML that cannot be edited.
 
 
 ### CSS custom code
