@@ -163,20 +163,20 @@
 
 
 ## Responsiveness
-#### Mobile
-- ![mobile responsiveness screenshot- home]()
-- ![mobile responsiveness screenshot- register]()
-- ![mobile responsiveness screenshot- view_manifestation]()
 
-#### Tablet
-- ![tablet responsiveness screenshot- home]()
-- ![tablet responsiveness screenshot- register]()
-- ![tablet responsiveness screenshot- view_manifestation]()
+The deployed site was tested for responsiveness accross various devices.
 
-#### Desktop
-- ![laptop responsiveness screenshot- home]()
-- ![laptop responsiveness screenshot- register]()
-- ![laptop responsiveness screenshot- view_manifestation]()
+#### Login
+- ![Responsiveness screenshot- home](static/manifest/images/responsive-login.png)
+
+#### Signup
+- ![Responsiveness screenshot- signup](static/manifest/images/responsive-signup.png)
+
+#### Shared Manifestations
+- ![Responsiveness screenshot- home](static/manifest/images/responsive-public.png)
+
+#### View Manifestation
+- ![Responsiveness screenshot- home](static/manifest/images/responsive-view-antique.png)
 
 ## Browsers
 - I use Google Chrome as my browser so all screenshots above are from Google Chrome.
