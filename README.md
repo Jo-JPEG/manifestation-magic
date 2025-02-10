@@ -123,8 +123,8 @@ Use this section to explain what sort of imagery you plan to use through your si
 ### Wireframes
 
  [Balsamiq](https://balsamiq.com/) Was used to create wireframes for mobile and desktop views.
-
-Add the images or links for your wireframes here.
+ 
+ - ![Mobile View Wireframes](static/manifest/images/mobile-wireframe.png)
 
 ## Features
 
@@ -157,9 +157,6 @@ As a mobile-first design, Manifestation Magic provides a toggle icon for the nav
 
 On wider screens, a horizontal navigation bar is always visible at the top of the site. 
 
-#### Footer
-
-#### 
 
 
 
@@ -305,6 +302,7 @@ Who wrote the content for the website? Was it yourself - or have you made the si
 - [Favicon.cc](https://www.favicon.cc/)
 - [coolors](https://coolors.co/)
 - [Balsamiq](https://balsamiq.com/)
+- [compress-or-die](https://compress-or-die.com/) was used to convert all images to webp format.
 
 If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
   

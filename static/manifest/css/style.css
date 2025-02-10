@@ -253,7 +253,7 @@ a:hover {
     padding: 10px;
 }
 
-.step {
+.about-box {
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
@@ -267,14 +267,6 @@ a:hover {
     justify-content: center;
     padding: 10px;
     margin: 10px;
-}
-
-.tip {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 3px 3px var(--outer-space);
-    max-width: 500px;
 }
 
 .public-list {
@@ -299,23 +291,6 @@ a:hover {
 
 .center {
     text-align: center;
-}
-
-.login-button {
-    background-color: var(--sage);
-    color: var(--text-color-dark);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 10px;
-    margin: 5px;
-    font-size: 1rem;
-    box-shadow: 3px 3px var(--outer-space);
-}
-
-.login-button:hover {
-    background-color: var(--outer-space);
-    color: var(--text-color-light);
 }
 
 .large-button {
@@ -413,6 +388,16 @@ form li {
 
 .delete-container form {
     box-shadow: none;
+}
+
+.profile-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+
 }
 
 /* style choices  */
@@ -581,6 +566,12 @@ form li {
 
     form {
         width: 80%;
+    }
+
+    .profile-actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 } 
 
