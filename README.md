@@ -282,12 +282,8 @@ Place instructions on how to clone your project here.
 - **Manual Testing:**
   - **Devices and Browsers Tested:** [List devices and browsers, ensuring testing was conducted with assistive technologies such as screen readers or keyboard-only navigation.]
   - **Features Tested:** [Summarise features tested manually, e.g., CRUD operations, navigation.]
-  - **Results:** [Summarise testing results, e.g., "All critical features worked as expected, including accessibility checks."]
-- **Automated Testing:**
-  - Tools Used: [Mention any testing frameworks or tools, e.g., Django TestCase.]
-  - Features Covered: [Briefly list features covered by automated tests.]
-  - Adjustments Made: [Describe any manual corrections to AI-generated test cases, particularly for accessibility.]
-
+  - **Results:** 
+  -All critical features worked as expected, including accessibility checks.
 
 
 ## Credits
