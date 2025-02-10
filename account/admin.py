@@ -17,6 +17,6 @@ class UserAdmin(BaseUserAdmin):
     list_display = ('username', 'email', 'display_name', 'is_staff')
     search_fields = ('username', 'email', 'display_name')
     ordering = ('username',)
-    readonly_fields = ('date_joined',)  # Add this line to make date_joined read-only
+    readonly_fields = ('date_joined',)
 
 admin.site.register(CustomUser, UserAdmin)
