@@ -172,6 +172,11 @@ User can choose to make a manifestation public, allowing it to be viewable to ot
 If a user edits their public manifestation at any time, it will automatically be resubmitted for admin approval. This ensures that any content that is publicly shared is appropriate for all.
 ![public but not yet approved manifestation screenshot](static/manifest/images/screenshot-public-not-approved.png)
 
+#### Admin Interface
+Admins are users with is_staff status and can manage users and manifestations. Admins can deactivate or delete user accounts if necessary. Admins can approve manifestations which are set to is_public. A filter has been added to the backend interface allowing admin users to quickly see which manifestations are awaiting approval. 
+![backend screenshot](static/manifest/images/screenshot-filter.png)
+The dropdown menu allows admins to quickly approve selected manifestations. They can also delete manifestations that contain harmful content.
+
 ### General features on each page
 
 #### Navigation
@@ -183,6 +188,10 @@ On wider screens, a horizontal navigation bar is always visible at the top of th
 #### Profile
 
 Users can see a profile page where they can edit their password or delete their account.
+
+#### Logout
+
+Users can log out of their account easily from the navbar.
 
 ### Future Implementations
 
