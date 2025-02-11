@@ -145,7 +145,9 @@ Images
 
 #### Custom User accounts
 
-Users can register, log-in, log-out, edit their passwords and delete their accounts through front-end forms. 
+Users can register, log-in, log-out, edit their passwords and delete their accounts through front-end forms.
+Users can control which manifestations they choose to make public. Only the owner of a manifestation can charge, edit or delete it.
+![non-owner view manifestation screenshot](static/manifest/images/screenshot-access.png)
 
 #### Create Manifestation 
 
@@ -167,6 +169,7 @@ The idea behind recharging manifestations is that it encourages users to remembe
 
 User can choose to make a manifestation public, allowing it to be viewable to others once it has receaved admin approval. This allows users to share thier important goals and wishes as well as take inspiration from other users. The requirement for admin approval ensures that inappropriate or harmful content is not shared publicly. 
 If a user edits their public manifestation at any time, it will automatically be resubmitted for admin approval. This ensures that any content that is publicly shared is appropriate for all.
+![public but not yet approved manifestation screenshot](static/manifest/images/screenshot-public-not-approved.png)
 
 ### General features on each page
 
@@ -174,11 +177,20 @@ If a user edits their public manifestation at any time, it will automatically be
 
 As a mobile-first design, Manifestation Magic provides a toggle icon for the navigation menu on screens less than 768 pixels wide. On mobile, the menu has a vertical layout.
 
-On wider screens, a horizontal navigation bar is always visible at the top of the site. 
+On wider screens, a horizontal navigation bar is always visible at the top of the site.
+
+#### Profile
+
+Users can see a profile page where they can edit their password or delete their account.
 
 ### Future Implementations
 
-- Future implementations 
+- A password reset request function for case of forgotten password.
+- An email change function so users can change the email address linked to their account.
+- Email verification system for increased user security and functionality.
+- Email notifications for users who have not been active or have requested email reminders to charge their manifestations.
+- A "like" or similar system to allow users to interact with public manifestations they do not own.
+- A "tag" or "catagorgy" system to provide meta data to manifestations and allow for users to search public manifestations.
 
 ### Accessibility
 
@@ -190,7 +202,8 @@ The colour scheme was chosen to meet contrast requirements and also avoid using 
 
 Fonts were chosen to be dyslexia friendly and provide contrast between main text and headings.
 
- 
+In the various style choices for manifestations, a "neutral" option is available with minimal styling and no background images.
+![neutral manifestation screenshot](static/manifest/images/screenshot-neutral.png)
 
 ## Technologies Used
 
@@ -228,19 +241,24 @@ Fonts were chosen to be dyslexia friendly and provide contrast between main text
 - Inline prompts for quick code generation or alterations were usually sufficient and required few adjustments.
 - VS Code's predictive "ghost text" was also used to speed up repetetive tasks. This frequently required manual adjustments but provided overall time savings.
 - Question and Answer style prompts were used to tackle specific coding challenges.
+- Initial code generated made use of manifestation id to create URLs for each manifestation. Slugs based on the manifestation title was found to be prefferable, so this had to be changed at a conciderable development time cost.
+- Most changes could be effected quickly using Copilot prompts.
+- Generated code was checked and sometimes disgarded and a more targeted prompt was used.
 
 #### Debugging:
 - Copilot was helpful in debugging as errors could be copy-pasted and resolved faster than manually scanning code for relevant errors.
+- Care was needed to ensure Copilot edits did not introduce futher bugs or errors into code.
 
 #### Performance and UX Optimization:
 - AI largly provided clean, optimized code which needed few adjustmnets. However, UX optimization was largely implemented manually through all stages of the project.
 
+
 ### Overall Impact:
 - AI tools allowed for faster code creation, enabling focus on high-level development.
-- Efficiency gains included .
-- Challenges included .
-- Copilot removed a vital piece of code while changing the id to slugs.
-- On reflection, more specific prompts could have 
+- Efficiency gains included faster edits to targeted areas of code.
+- Challenges included, folder management, and unexpected code removal.
+- Copilot removed a vital piece of code while changing the URL model from using manifestation's id to slugs.
+- On reflection, more specific prompts could have prevented the need for large code changes during development.
 
 ## Deployment & Local Development
 
@@ -268,7 +286,7 @@ Fonts were chosen to be dyslexia friendly and provide contrast between main text
     - os.environ["DATABASE_URL"]='Your database URL'
     - os.environ["SECRET_KEY"]="Your secret key"
 9. Create a file at the root directory called Procfile. In this file enter: "web: gunicorn my_project.wsgi" (without the quotes)
-10. In settings.py, ensure DEBUG is set to `False`. (Always set debug to false before deploying for security)
+10. In settings.py, ensure DEBUG is set to `False`.
 11. Add ",'.herokuapp.com' " (without the double quotes) to the ALLOWED_HOSTS list in settings.py
 12. Add, commit and push your code.
 13. On Heroku, click on the 'Deploy' tab.
@@ -276,12 +294,12 @@ Fonts were chosen to be dyslexia friendly and provide contrast between main text
 15. Scroll to 'Manual deploy' and click on, 'Deploy Branch'.
 
 
-- **Verification and Validation:**
-  - Steps taken to verify the deployed version matches the development version in functionality.
-  - [Include any additional checks to ensure accessibility of the deployed application.]
-- **Security Measures:**
-  - Use of environment variables for sensitive data.
-  - Ensured DEBUG mode is disabled in production.
+#### Verification and Validation:
+- Verify the deployed version matches the development version in functionality.
+- Ensure accessibility of the deployed application via manual testing and Lighthouse performance checks.
+#### Security Measures:
+- Sensitive data, such as the SECRET_KEY should be kept in env.py and not publicly shared.
+- Always set DEBUG to `FALSE` before deploying, for security.
 
 ### Local Development
 
@@ -293,15 +311,6 @@ A fork is a new repository that shares code and visibility settings with the ori
 2. Click the "Fork" button (found above the Settings button).
 3. This creates a copy of the original repository in your GitHub account.
 
-*Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
-
-- Run the server: `python3 manage.py runserver`
-- Stop the app once it's loaded: `CTRL+C` or `⌘+C`
-- Make any necessary migrations: `python3 manage.py makemigrations`
-- Migrate the data to the database: `python3 manage.py migrate`
-- Create a superuser: `python3 manage.py createsuperuser`
-
-
 #### How to Clone
 
 Cloning this repository will create a local copy on your computer.
@@ -311,6 +320,14 @@ Cloning this repository will create a local copy on your computer.
 - Open your terminal: Open a terminal window on your computer. 
 - Run the clone command: `git clone <repository-url>` 
 - You can also clone a repository using the GitHub Desktop application by selecting the repository and clicking "Clone". 
+
+*Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
+
+- Run the server: `python3 manage.py runserver`
+- Stop the app once it's loaded: `CTRL+C` or `⌘+C`
+- Make any necessary migrations: `python3 manage.py makemigrations`
+- Migrate the data to the database: `python3 manage.py migrate`
+- Create a superuser: `python3 manage.py createsuperuser`
 
 ## Testing
 
