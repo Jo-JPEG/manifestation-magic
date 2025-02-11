@@ -53,17 +53,6 @@ View the live site here: [Manifestation Magic](https://manifestation-magic-d55b1
 
 ## User Experience (UX)
 
-
-- **Wireframes:**
-  - [Attach or link to accessible wireframes used in the design process, ensuring high colour contrast and alt text for visual elements.]
-  - [Explain the rationale behind the layout and design choices, focusing on usability and accessibility for all users, including those using assistive technologies.]
-- **Design Rationale:**
-  - [Explain key design decisions, such as layout, colour scheme, typography, and how accessibility guidelines (e.g., WCAG) were integrated.]
-  - [Highlight any considerations made for users with disabilities, such as screen reader support.]
-- **Reasoning For Any Final Changes:**
-  - [Summarise significant changes made to the design during development and the reasons behind them.]
-  - [Reflect on how these changes enhance inclusivity and accessibility.]
-
 ### User Stories
 
 - Full User Stories in GitHub Projects:
@@ -109,9 +98,8 @@ Using the MoSCoW method to prioritize features ensured that I could clearly unde
 
 ## Design
 
-- **Design Rationale:**
-  - [Explain key design decisions, such as layout, colour scheme, typography, and how accessibility guidelines (e.g., WCAG) were integrated.]
-  - [Highlight any considerations made for users with disabilities, such as screen reader support.]
+### Design Rationale:
+
 
 ### Colour Scheme
 
@@ -133,7 +121,12 @@ The third font, Griffy, is used only to represent the webpage brand, "Manifestat
 
 ### Imagery
 
-Use this section to explain what sort of imagery you plan to use through your site.
+The logo was designed by myself, taking inspiration from the idea of "manifestation". The logo uses the site colour scheme and was tested with several versions.
+
+Style images were sourced from [pixabay.com](https://pixabay.com/) and used as background images. These images do not provide semantic information and are intended only to enhance the site's aesthetic appeal. Images that would be concidered content should be present in the HTML as an `<img>` so that they can be given alt text.
+
+Style images were used as style choice decorations. All images were edited for size and converted to webp format to ensure best performance. The images were edited to change the colour and transparency as needed to create a cohesive effect and to ensure that all text is clear and has sufficient contrast at all times for easy readability.
+Images 
 
 ### Wireframes
 
@@ -171,7 +164,7 @@ The idea behind recharging manifestations is that it encourages users to remembe
 #### Share Manifestation 
 
 User can choose to make a manifestation public, allowing it to be viewable to others once it has receaved admin approval. This allows users to share thier important goals and wishes as well as take inspiration from other users. The requirement for admin approval ensures that inappropriate or harmful content is not shared publicly. 
-If a user edits their public manifestation at any time, it will automatically be resubmitted for admin approval. This ensures that any content that is publicly shared is appropriate for all. 
+If a user edits their public manifestation at any time, it will automatically be resubmitted for admin approval. This ensures that any content that is publicly shared is appropriate for all.
 
 ### General features on each page
 
@@ -181,12 +174,9 @@ As a mobile-first design, Manifestation Magic provides a toggle icon for the nav
 
 On wider screens, a horizontal navigation bar is always visible at the top of the site. 
 
-
-
-
 ### Future Implementations
 
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
+- Future implementations 
 
 ### Accessibility
 
@@ -196,19 +186,22 @@ I added aria-labels and text context to all elements.
 
 The colour scheme was chosen to meet contrast requirements and also avoid using 100% black and white shades, as this is found to be too harsh for many users.
 
-Fonts were chosen to be dyslexia friendly and provide contrast to  headings.
+Fonts were chosen to be dyslexia friendly and provide contrast between main text and headings.
 
  
 
 ## Technologies Used
+
+### Database model
+
+ The database was planned with [dbdiagram.io ](https://dbdiagram.io/).
+![Database Model](static/manifest/images/database-model.png)
 
 ### Languages Used
 
 - HTML was used to create the frontend pages.
 - CSS was used to style the frontend site.
 - Python and Django were used to build the backend framework.
-- 
-
 
 ### Frameworks, Libraries & Programs Used
 
@@ -217,9 +210,10 @@ Fonts were chosen to be dyslexia friendly and provide contrast to  headings.
 - [Microsoft Copilot](https://copilot.microsoft.com/) was used (See AI Implementation and Orchestration)
 - [FireAlpaca](https://firealpaca.com/) was used for creating the custom logo and editing other images for use on the site.
 - [dbdiagram.io ](https://dbdiagram.io/) was used to create a database model.
-- [Google Fonts](https://fonts.google.com/)
-- [Favicon.cc](https://www.favicon.cc/)
-- [coolors](https://coolors.co/)
+- [Google Fonts](https://fonts.google.com/) was used for fonts.
+- [Font Awesome](https://fontawesome.com/) was used for icons.
+- [Favicon.cc](https://www.favicon.cc/) was used to create a favicon.
+- [coolors](https://coolors.co/) was used to generate a colour scheme.
 - [Balsamiq](https://balsamiq.com/) was used for initial wireframe creation.
 
 ## AI Implementation and Orchestration

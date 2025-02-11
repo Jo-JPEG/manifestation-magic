@@ -88,7 +88,7 @@
 
 ### CSS custom code
 - The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the CSS.
-- ![CSS validator screenshot]()
+- ![CSS validator screenshot](static/manifest/images/css-valid.png)
 
 ### Python
 - The [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the Python files.
@@ -126,6 +126,9 @@
 - ![PEP8 screenshot](static/manifest/images/wsgi.pyPEP8.png)
 
 ### Lighthouse
+- Chrome Dev tools were used for debugging and page optimization at all stages of development.
+- All image files were converted to webp format and made as small as possible as a result of Lighthouse feedback.
+- Links were given background colours distinct from the page background and styled to show when they were hovered over. 
 #### Home
 - ![Lighthouse screenshot for home page](static/manifest/images/lighthouse-home.png)
 
