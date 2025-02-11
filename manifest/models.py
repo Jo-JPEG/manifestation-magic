@@ -8,6 +8,7 @@ from django.dispatch import receiver
 import itertools
 
 
+# The Manifestation model
 class Manifestation(models.Model):
     STYLE_CHOICES = [
         ("moon", "Moon"),
@@ -36,6 +37,7 @@ class Manifestation(models.Model):
     is_public = models.BooleanField(default=False)
     is_approved = models.BooleanField(default=False)
 
+#  checks if the manifestation is charged and if it can be charged
     def save(self, *args, **kwargs):
         now = timezone.now()
         if self.last_charged:
@@ -58,6 +60,7 @@ class Manifestation(models.Model):
                 self.slug = f"{original_slug}-{i}"
         super().save(*args, **kwargs)
 
+#  returns the time when the manifestation can be charged next
     def next_charge_time(self):
         if self.last_charged is None:
             return None
@@ -67,6 +70,7 @@ class Manifestation(models.Model):
         return self.title
 
 
+# creates unique slugs for each manifestation
 @receiver(pre_save, sender=Manifestation)
 def set_slug(sender, instance, **kwargs):
     if not instance.slug:
