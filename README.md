@@ -1,5 +1,5 @@
 # Manifestation Magic
-
+![Site logo](static/manifest/images/logo.webp)
 ## Overview
 
 The purpose of Manifestation Magic is to provide users with a dedicated platform to help them manifest their goals, wishes, and dreams. This application aims to address the common challenge of staying motivated and focused on personal aspirations by offering a supportive and structured environment for daily engagement. By allowing users to create, recharge, and track their manifestations, the app encourages consistency, accountability, and positive reinforcement, ultimately helping users achieve their full potential and turn their dreams into reality.
@@ -265,7 +265,7 @@ In the various style choices for manifestations, a "neutral" option is available
 
 ### Deployment
 
-- **Platform:** 
+#### Platform:
 - The website was deployed to Heroku and can be found [here](https://manifestation-magic-d55b183502af.herokuapp.com/).
 ### Heroku
 * Heroku is a cloud platform that lets developers create, deploy, monitor and manage apps.
