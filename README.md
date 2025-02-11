@@ -149,17 +149,19 @@ Users can register, log-in, log-out, edit their passwords and delete their accou
 
 #### Create Manifestation 
 
-Users complete a form to create their own manifestation. This includes a title, description, style choice and if they wish to make the manifestation public. 
+Users complete a form to create their own manifestation. This includes a title, description, style choice and if they wish to make the manifestation public.
+![create new manifestation screenshot](static/manifest/images/screenshot-create.png)
 
 #### View Manifestation
 
-Each manifestation has a unique URL slug allowing users to view their manifestation. They also have a choice of styles which vary the manifestation's aethetics. 
+Each manifestation has a unique URL slug allowing users to view their manifestation. They also have a choice of styles which vary the manifestation's aethetics. The view has information about when the manifestation was created, when it was last charged, it it can be charged now, if it is set to public or private and if it has been approved by an admin.
+![view manifestation screenshot](static/manifest/images/screenshot-view.png)
 
 #### Charge Manifestation
 
 Once a user has created their manifestation, they can recharge it by clicking on a button. Manifestations remain charged for 24 hours, however, users can recharge their manifestation again after 12 hours have passed. This improves the user experience, as users do not have to wait a full 24 hours until they can recharge. This means they do not have to charge at the same time every day but at a time that is convenient for them. 
-
-The idea behind recharging manifestations is that it encourages users to remember their manifestations and goals. The charge button is a statisfying way for users to remain focused on their goals and aspirations. 
+![charge button screenshot](static/manifest/images/screenshot-charge.png)
+The idea behind recharging manifestations is that it encourages users to remember their manifestations and goals. The charge button is a statisfying way for users to remain focused on their goals and aspirations.
 
 #### Share Manifestation 
 
