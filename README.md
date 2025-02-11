@@ -127,7 +127,6 @@ The logo was designed by myself, taking inspiration from the idea of "manifestat
 Style images were sourced from [pixabay.com](https://pixabay.com/) and used as background images. These images do not provide semantic information and are intended only to enhance the site's aesthetic appeal. Images that would be concidered content should be present in the HTML as an `<img>` so that they can be given alt text.
 
 Style images were used as style choice decorations. All images were edited for size and converted to webp format to ensure best performance. The images were edited to change the colour and transparency as needed to create a cohesive effect and to ensure that all text is clear and has sufficient contrast at all times for easy readability.
-Images 
 
 ### Wireframes
 
@@ -157,7 +156,7 @@ Users complete a form to create their own manifestation. This includes a title, 
 
 #### View Manifestation
 
-Each manifestation has a unique URL slug allowing users to view their manifestation. They also have a choice of styles which vary the manifestation's aethetics. The view has information about when the manifestation was created, when it was last charged, it it can be charged now, if it is set to public or private and if it has been approved by an admin.
+Each manifestation has a unique URL slug allowing users to view their manifestation. They also have a choice of styles which vary the manifestation's aethetics. The view has information about when the manifestation was created, when it was last charged, if it can be charged now, if it is set to public or private, and if it has been approved by an admin.
 ![view manifestation screenshot](static/manifest/images/screenshot-view.png)
 
 #### Charge Manifestation
@@ -267,12 +266,11 @@ In the various style choices for manifestations, a "neutral" option is available
 #### Performance and UX Optimization:
 - AI largly provided clean, optimized code which needed few adjustmnets. However, UX optimization was largely implemented manually through all stages of the project.
 
-
 ### Overall Impact:
 - AI tools allowed for faster code creation, enabling focus on high-level development.
 - Efficiency gains included faster edits to targeted areas of code.
 - Challenges included, folder management, and unexpected code removal.
-- Copilot removed a vital piece of code while changing the URL model from using manifestation's id to slugs.
+- Copilot removed a vital piece of code while changing the URL model from using manifestation's id to slugs. This was caught early thanks to frequent manual testing of the deployed and local site.
 - On reflection, more specific prompts could have prevented the need for large code changes during development.
 
 ## Deployment & Local Development
