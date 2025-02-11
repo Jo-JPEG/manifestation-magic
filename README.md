@@ -100,7 +100,7 @@ Using the MoSCoW method to prioritize features ensured that I could clearly unde
 
 ### Design Rationale:
 
-The site is intended to have an easy to use, personal feeling. Links, buttons and text are large, clear and distinct. 
+The site is intended to have an easy to use, personal feeling. Links, buttons and text are large, clear and distinct. A clean, intuitive user interface that makes it easy to navigate and use the app.
 
 ### Colour Scheme
 
