@@ -161,13 +161,13 @@
 
 
 #### Future improvements based on Lighthouse
-- 
 
-
+- Reduce unused CSS introduced by third-party sourses, such as Font Awesome icons.
+- Minify CSS to reduce network payload sizes.
 
 ## Responsiveness
 
--The deployed site was tested for responsiveness accross various devices.
+The deployed site was tested for responsiveness accross various devices.
 
 #### Mobile 
 
@@ -196,4 +196,4 @@
 - ![Opera screrenshot](static/manifest/images/opera-screenshot.png)
 
 ## Bugs
-- Add bugs here
+- No known bugs are present at time of deployment.
